@@ -18,6 +18,10 @@ const Contact = () => {
         <p>berkcapar@gmail.com</p>
         </div>
         </div>
+        <div className="contact-media">
+        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin</a>
+        <a href="https://github.com/berkcapar">Github</a>
+        </div>
       </div>
       <style jsx>{`
         .contact-text {
@@ -32,13 +36,12 @@ const Contact = () => {
         .contact-image-info{
           display:flex;
           align-items: center;
-          justify-content: space-around;            
+          justify-content: space-evenly;            
         }
         info-p-container{
             display:flex;
             flex-direction: column;
         }
-
         h2{
          margin-left: 3rem;
          margin-top: 1rem;
@@ -48,6 +51,35 @@ const Contact = () => {
           margin-left: 1rem;
           margin-top: 1rem;
           border-radius: 50%;
+        }
+        .contact-media{
+            color: white;  
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        .contact-media a{
+              border: 1px solid white;
+              background-color: white;
+              border-radius: 1.5rem;
+              margin-right: 1rem;
+              padding: 1rem;   
+              color: black;  
+        }
+        @media(min-width:675px){
+            .contact-container{
+                width:60%;
+                margin: 1rem auto;
+            }
+            .contact-text{
+              width: 80%;  
+            }
+            h2{
+                margin-left:4.7rem;
+            }
+            img{
+                max-width:300px;
+            }
         }
       `}</style>
     </div>
