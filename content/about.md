@@ -14,11 +14,13 @@ Try to build MERN Stack Projects and get better at programming.
 Building portfolio pages for close circle people who are artist and needed one, using Next.js.
 
 
-### **Shout out to;**
+### **Shout out to:**
 
 **Deniz Erden** who is my girlfriend and felt her support and don't hesitate the bring out of the box approaches every possible time. 🙇🏻‍♀️ While you here, [listen](https://www.youtube.com/channel/UCaKjcv9ns0qRCicbkjmxIuA) some of her dope tracks.
 
 **Altay Aydemir** who is one the most supportive and forward-thinker friend who helped me a lot on motivation, self-improvement aaand software development. Check his [web page](https://altay.wtf/) to find more about him.
+
+**Ege Çapar** who is my computer engineering junior student brother who always impresses me with hard-working and delicious cooking skills.
 
 **Sinan Aksay** who is founder of ReactJS Istanbul community and a [patient bug-killer](https://wunnle.dev/) for my Reactjs projects.
 
@@ -26,7 +28,7 @@ Building portfolio pages for close circle people who are artist and needed one, 
 
 ### **What I Did**
 
-**2020 —** I've decided to learn React as a solo-learner since it has the most resources and be a modern web developer. After few video tutorials finally I've found the one and completed [Helsinki University's Full Stack Open](https://fullstackopen.com/) program. During this time, I've attend ReactJS Istanbul community and meet perfect developers who are very supportive on my solo-learner journey.
+**2020 —** I've decided to learn React as a solo-learner since it has the most online resources and one of most modern ways for web development. After few video tutorials, finally I've found the one and completed [Helsinki University's Full Stack Open](https://fullstackopen.com/) program. During this time, I've become a member of ReactJS Istanbul community and met perfect developers who are very supportive on my solo-learner journey.
 
 **2020 —** I've made a switch at [Bond Digital](https://www.linkedin.com/company/the-bond-digital/) and my new role is Technical Account Manager for Samsung. 
 
