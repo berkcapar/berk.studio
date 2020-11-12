@@ -11,16 +11,15 @@ const Header = () => {
       </Link>
       <style jsx>{`
         .sitetitle {
-         width: 20%;
+         width: 10%;
          margin: 0 auto;
         }
         .sitetitle a {
           text-decoration: none;
         }
         @media (min-width:675px){
-        .sitetitle a {
-            margin-left: 3rem;
-            margin-top: 0.5rem;
+        .sitetitle {
+            margin-left: 1rem;
         }
         }
       `}</style>

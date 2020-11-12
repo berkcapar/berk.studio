@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link"
-<script src="https://kit.fontawesome.com/c0e82ecf0e.js" crossorigin="anonymous"></script>
 
 const Welcome = () => {
   return (
@@ -36,7 +35,7 @@ const Welcome = () => {
             margin-top: 0.5rem;    
             padding-bottom: 2rem;
             margin-left: 1rem;
-            width: 50%;
+            width: 60%;
             display: flex;
             flex-wrap: wrap;  
         }
@@ -73,14 +72,19 @@ const Welcome = () => {
               border: 1px solid white;
               border-radius: 1.5rem;
               margin-right: 1rem;
-              padding:1rem;       
+              padding: 1rem;       
           }
-          i{
-            color:lightsalmon;
+          i {
+            color: lightsalmon;
             margin-left: 0.125rem;
             padding-top: 0.125rem;
-           
-
+          }
+          @media (min-width:675px){
+            .welcomecontainer{
+              width: 50%;
+              margin: 1rem auto;
+            }
+            
           }
         `}
       </style>

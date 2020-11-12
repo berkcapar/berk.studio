@@ -15,7 +15,7 @@ const Navigation = () => {
       </Link>
       <style jsx>{`
         nav {
-          padding: 0;
+          padding:0;
           display: flex;
           justify-content: space-around;
         }
@@ -25,6 +25,14 @@ const Navigation = () => {
           text-decoration: none;
         }
         nav a:hover {
+        }
+        @media(min-width:675px){
+          nav{
+            margin-top:1rem;
+          }
+          nav a {
+            margin-right: 2rem;    
+          }
         }
         
       `}</style>
