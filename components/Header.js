@@ -6,7 +6,7 @@ const Header = () => {
     <div className="sitetitle">
       <Link href="/">
         <a>
-          <h1>berk.</h1>
+          <h1>berk.studio</h1>
         </a>
       </Link>
       <style jsx>{`
