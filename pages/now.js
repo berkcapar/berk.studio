@@ -35,11 +35,8 @@ const Now = ({ content, data }) => (
       {/* burada reactmarkdown'a pass eyledik */}
       <ReactMarkdown children={content} />
     </div>
-    <div className="now-date">
-      {/* bu takvim date yazdiriyor */}
-      Last updated: {format(new Date(data.date), 'PPP')}
-    </div>
-    <div className="now-date">
+    
+    <div className="now-relative-date">
       {/* bu relative date yazdiriyor */}
       Last updated: {formatDistanceToNow(new Date(data.date), { addSuffix: true })}
     </div>
@@ -48,6 +45,19 @@ const Now = ({ content, data }) => (
       color: white;
       width: 80%;
       margin: 1rem auto;
+    }
+    .now-relative-date{
+      color: white;
+      width: 80%;
+    }
+    @media(min-width:675px){
+      .nowcontent{
+        width:50%;
+      }
+      .now-relative-date{
+        width:50%;
+        margin: 3rem auto;
+      }
     }
 `}</style>
   </div> 

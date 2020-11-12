@@ -28,7 +28,7 @@ const Navigation = () => {
         }
         @media(min-width:675px){
           nav{
-            margin-top:1rem;
+          
           }
           nav a {
             margin-right: 2rem;    
