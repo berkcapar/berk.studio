@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
           src="https://kit.fontawesome.com/c0e82ecf0e.js"
           crossOrigin="anonymous"
         ></script>
+        <script async defer data-domain="berk.studio" src="https://plausible.io/js/plausible.js"></script>
         <title>Berk Çapar</title>
         <meta
           name="viewport"
