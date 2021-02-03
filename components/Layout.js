@@ -10,11 +10,20 @@ const Layout = ({ children }) => {
           src="https://kit.fontawesome.com/c0e82ecf0e.js"
           crossOrigin="anonymous"
         ></script>
-        <script async defer data-domain="berk.studio" src="https://plausible.io/js/plausible.js"></script>
+        <script
+          async
+          defer
+          data-domain="berk.studio"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
         <title>Berk Çapar</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width= device-width"
+        />
+        <meta
+          name="google-site-verification"
+          content="p506aFByQlIFfJp7oSiaTgiPHk9Drj9MMj2I906eg9E"
         />
       </Head>
 
@@ -55,4 +64,3 @@ const Layout = ({ children }) => {
   );
 };
 export default Layout;
-
