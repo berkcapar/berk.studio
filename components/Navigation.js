@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 const Navigation = () => {
   return (
     <nav>
@@ -10,12 +9,15 @@ const Navigation = () => {
       <Link href="/now">
         <a>Now</a>
       </Link>
+      <Link href="/projects">
+        <a>Projects</a>
+      </Link>
       <Link href="/contact">
         <a>Contact</a>
       </Link>
       <style jsx>{`
         nav {
-          padding:0;
+          padding: 0;
           display: flex;
           justify-content: space-around;
         }
@@ -26,15 +28,13 @@ const Navigation = () => {
         }
         nav a:hover {
         }
-        @media(min-width:675px){
-          nav{
-          
+        @media (min-width: 675px) {
+          nav {
           }
           nav a {
-            margin-right: 2rem;    
+            margin-right: 2rem;
           }
         }
-        
       `}</style>
     </nav>
   );

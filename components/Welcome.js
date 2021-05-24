@@ -10,10 +10,8 @@ const Welcome = () => {
       </div>
       <div className="subcontainer">
         <h2>I'm Berk Çapar</h2>
-        <h3>
-          I am creative marketing person who design and build things for web.
-        </h3>
-        <p>Technical Project Manager and Freelance Web Developer.</p>
+        <h3>I am product manager who design and build things for web.</h3>
+        <p>Samsung Product Manager and Freelance Web Developer.</p>
         <p>Based in Istanbul.</p>
       </div>
       <nav>
@@ -52,14 +50,13 @@ const Welcome = () => {
             margin-left: 1rem;
           }
           .wave {
-            animation-name: wave-animation; 
-            animation-duration: 2.5s; 
-            animation-iteration-count: infinite; 
-            transform-origin: 70% 70%; 
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
             display: inline-block;
             margin-left: 0.5rem;
             padding-top: 0.4rem;
-          
           }
 
           @keyframes wave-animation {
@@ -68,7 +65,7 @@ const Welcome = () => {
             }
             10% {
               transform: rotate(14deg);
-            } 
+            }
             20% {
               transform: rotate(-8deg);
             }
@@ -83,7 +80,7 @@ const Welcome = () => {
             }
             60% {
               transform: rotate(0deg);
-            } 
+            }
             100% {
               transform: rotate(0deg);
             }
