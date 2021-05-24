@@ -8,7 +8,7 @@ const Projects = () => {
       <ProjectsNav />
       <div className="product-manager-roles-container">
         <div className="product-manager-roles">
-          <img alt="Samsung Galaxy Bizz" src="./galaxybizz.png" />
+          <img alt="Samsung Galaxy Bizz" src="./GalaxyBizz.png" />
           <div className="product-manager-roles-text">
             <h3>Samsung Galaxy Bizz</h3>
             <p>
