@@ -5,14 +5,11 @@
 
 ### **What I Do**
 
-Living in Istanbul
+📍 Living in Munich
 
-Working at Bond Digital as Technical Account Manager in 9-6
+🧑🏽‍💻 Working at Experteer as Senior Product Manager
 
-Try to build MERN Stack Projects and get better at programming.
-
-Building portfolio pages for close circle people who are artist and needed one, using Next.js.
-
+🏃🏻 Have to pause side coding project in rush of moving to new country.
 
 ### **Shout out to:**
 
@@ -24,9 +21,12 @@ Building portfolio pages for close circle people who are artist and needed one, 
 
 **Sinan Aksay** who is founder of ReactJS Istanbul community and a [patient bug-killer](https://wunnle.dev/) for my Reactjs projects.
 
-**Uluç Selamet** [who](https://tr.linkedin.com/in/ulu%C3%A7-selamet-b94ab851) probably thought everything about sales and marketing. 
 
 ### **What I Did**
+
+**2021 —** I was looking abroad oppurtunities in order to make my move from Turkey. After a few applications, I have moved to Munich for Senior Product Manager role at Experteer. 
+
+---
 
 **2020 —** I've decided to learn React as a solo-learner since it has the most online resources and one of most modern ways for web development. After few video tutorials, finally I've found the one and completed [Helsinki University's Full Stack Open](https://fullstackopen.com/) program. During this time, I've become a member of ReactJS Istanbul community and met perfect developers who are very supportive on my solo-learner journey.
 

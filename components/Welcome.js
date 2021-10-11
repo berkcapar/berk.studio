@@ -11,8 +11,8 @@ const Welcome = () => {
       <div className="subcontainer">
         <h2>I'm Berk Çapar</h2>
         <h3>I am product manager who design and build things for web.</h3>
-        <p>Samsung Product Manager and Freelance Web Developer.</p>
-        <p>Based in Istanbul.</p>
+        <p>Product Manager at Experteer</p>
+        <p>Based in Munich 🇩🇪</p>
       </div>
       <nav>
         <Link href="/who">
