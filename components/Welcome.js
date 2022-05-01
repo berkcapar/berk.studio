@@ -16,7 +16,7 @@ const Welcome = () => {
       <nav>
         <Link href="/who">
           <a>
-            More about me <i className="fas fa-long-arrow-alt-right"></i>
+            More about me<i className="fas fa-long-arrow-alt-right"></i>
           </a>
         </Link>
         <Link href="/now">
@@ -24,11 +24,12 @@ const Welcome = () => {
             What am I doing now <i className="fas fa-long-arrow-alt-right"></i>
           </a>
         </Link>
+        
       </nav>
       <div className="externalcontainer">
-        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fas fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/berkcapar"> Github<i className="fas fa-brands fa-github"></i></a>
-        <a href="https://twitter.com/bcaparing">Twitter<i className="fas fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a href="https://github.com/berkcapar">Github<i className="fas fa-long-arrow-alt-right"></i></a>
+        <a href="https://twitter.com/bcaparing">Twitter<i className="fas fa-long-arrow-alt-right"></i></a>
         
       </div>
       <style jsx>
@@ -109,8 +110,8 @@ const Welcome = () => {
           }
           i {
             color: lightsalmon;
-            margin-left: 0.125rem;
-            padding-top: 0.125rem;
+            margin-left: 0.25rem;
+            padding-top: 0.25rem;
           }
           @media (min-width: 675px) {
             .welcomecontainer {
@@ -126,12 +127,11 @@ const Welcome = () => {
             nav {
              
               margin-left: 0;
-             
             }
             .externalcontainer {
-           
               margin-left: 0;
             }
+           
           }
         `}
       </style>

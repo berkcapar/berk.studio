@@ -14,6 +14,7 @@ const Navigation = () => {
       </Link>
       <Link href="/contact">
         <a>Contact</a>
+        
       </Link>
       <style jsx>{`
         nav {
