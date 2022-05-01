@@ -25,6 +25,7 @@ const Navigation = () => {
           margin-top: 1rem;
           margin-bottom: 1rem;
           text-decoration: none;
+          font-weight: bold;
         }
         nav a:hover {
         }

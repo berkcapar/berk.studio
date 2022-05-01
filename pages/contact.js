@@ -45,6 +45,8 @@ const Contact = () => {
         h2{
          margin-left: 3rem;
          margin-top: 1rem;
+         color: lightsalmon;
+
         }
         img {
           width: 50%;

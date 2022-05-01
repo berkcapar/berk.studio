@@ -54,6 +54,8 @@ const Projects = () => {
         }
         .product-manager-roles-container-title{
           margin-bottom:1.5rem;
+          color: lightsalmon;
+
         } 
         .product-manager-roles,
         .developer-roles {

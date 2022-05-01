@@ -22,9 +22,8 @@
 
 **2020 —** I've decided to learn React as a solo-learner since it has the most online resources and one of most modern ways for web development. After few video tutorials, finally I've found the one and completed [Helsinki University's Full Stack Open](https://fullstackopen.com/en) program. During this time, I've become a member of ReactJS Istanbul community and met perfect developers who are very supportive on my solo-learner journey.
 
-**2020 —** I've made a switch at [Bond Digital](https://www.linkedin.com/company/the-bond-digital/) and my new role is Samsung Technical Product Manager.
+**2020 —** I've made a switch at [Bond Digital](https://www.linkedin.com/company/the-bond-digital/) and my new role is Samsung Technical Product Manager for their 8 digital products including mobile apps, ad-tech models, Samsung Internet, Galaxy Store. 
 
-*Samsung* has 8 digital products including mobile apps, preload ad models and all of them are available at all Samsung devices in Turkey. We work with Samsung how can we sell these product's ad slots to potential advertisers and finally, my job here, make sure all these ad-tech process goes smoothly. 
 
 **2019 —** I've really want to build something for web as well. After a few unsuccessful Udemy attempt, I went to [BilgeAdam Frontend Bootcamp](https://www.bilgeadam.com/akademi/bilisim-uzmanligi/front-end-development) and learnt basics of CSS, Javascript, Nodejs. I've build few freelance projects-mostly company pages- for a few small businesses.
 

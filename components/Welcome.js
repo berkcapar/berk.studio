@@ -26,8 +26,9 @@ const Welcome = () => {
         </Link>
       </nav>
       <div className="externalcontainer">
-        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/berkcapar">Github</a>
+        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fas fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/berkcapar"> Github<i className="fas fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/bcaparing">Twitter<i className="fas fa-brands fa-twitter"></i></a>
         
       </div>
       <style jsx>
@@ -89,8 +90,7 @@ const Welcome = () => {
             display: flex;
             flex-direction: column;
             margin-top: 1rem;
-            margin-left: 0.7rem;
-            width: 90%;
+            width: 100%;
           }
           .subcontainer {
             margin-left: 1rem;
@@ -98,13 +98,14 @@ const Welcome = () => {
           .externalcontainer {
             color: white;
             display: flex;
-            justify-content: center;
+            margin-left: 1rem;
           }
           .externalcontainer a {
             border: 1px solid white;
-            border-radius: 1.5rem;
+            border-radius: 0.5rem;
             margin-right: 1rem;
-            padding: 1rem;
+            padding:0.6rem;
+            color: white;
           }
           i {
             color: lightsalmon;
@@ -113,8 +114,23 @@ const Welcome = () => {
           }
           @media (min-width: 675px) {
             .welcomecontainer {
-              width: 52%;
+              width: 50%;
               margin: 0.5rem auto;
+            }
+            .subcontainer {
+              margin-left: 0;
+            }
+            .firstpar {
+              margin-left: 0rem;
+            }
+            nav {
+             
+              margin-left: 0;
+             
+            }
+            .externalcontainer {
+           
+              margin-left: 0;
             }
           }
         `}
