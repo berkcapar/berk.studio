@@ -6,21 +6,19 @@ const Header = () => {
     <div className="sitetitle">
       <Link href="/">
         <a>
-          <h1>berk çapar</h1>
+          <h1>Berk Çapar</h1>
         </a>
       </Link>
       <style jsx>{`
-        .sitetitle {
-         width: 16%;
-         margin: 1rem auto;
+        .sitetitle h1 {
+          width: 100%;
         }
         .sitetitle a {
           text-decoration: none;
         }
         @media (min-width:675px){
         .sitetitle {
-        width: 100%;
-        margin-left: 1rem;
+           margin-top: 1rem;
         }
         }
       `}</style>

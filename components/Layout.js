@@ -51,12 +51,16 @@ const Layout = ({ children }) => {
             display: flex;
             justify-content: space-between;
           }
+          .header{
+            text-align: center;
+          }
           @media (min-width: 675px) {
             .container-nav {
               flex-direction: row;
               width: 50%;
               margin: 0 auto;
             }
+            
           }
         `}
       </style>

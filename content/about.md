@@ -9,28 +9,20 @@
 
 🧑🏽‍💻 Working at Experteer as Senior Product Manager
 
-🏃🏻 Have to pause side coding project in rush of moving to new country.
-
-### **Shout out to:**
-
-**Deniz Erden** who is my girlfriend and felt her support and don't hesitate the bring out of the box approaches every possible time. 🙇🏻‍♀️ While you here, [listen](https://www.youtube.com/channel/UCaKjcv9ns0qRCicbkjmxIuA) some of her dope tracks.
-
-**Altay Aydemir** who is one the most supportive and forward-thinker friend who helped me a lot on motivation, self-improvement aaand software development. Check his [web page](https://altay.wtf/) to find more about him.
-
-**Ege Çapar** who is my computer engineering junior student brother who always impresses me with hard-working and delicious cooking skills.
-
-**Sinan Aksay** who is founder of ReactJS Istanbul community and a [patient bug-killer](https://wunnle.dev/) for my Reactjs projects.
-
 
 ### **What I Did**
 
-**2021 —** I was looking abroad oppurtunities in order to make my move from Turkey. After a few applications, I have moved to Munich for Senior Product Manager role at Experteer. 
+**2022 —** I've launched my first big product in the company, which analyzes CVs and creates profiles from them. We want to increase the profile creation rate with the MVP launch and see improvements on it in a short period.
+
+**2021 —** I was looking for abroad opportunities in order to make my move from Turkey. After a few applications, I have moved to Munich for the Senior Product Manager role at [Experteer](https://eu.experteer.com/), premium HR SaaS company.
 
 ---
 
-**2020 —** I've decided to learn React as a solo-learner since it has the most online resources and one of most modern ways for web development. After few video tutorials, finally I've found the one and completed [Helsinki University's Full Stack Open](https://fullstackopen.com/) program. During this time, I've become a member of ReactJS Istanbul community and met perfect developers who are very supportive on my solo-learner journey.
+**2021 —** We launched the new version of [Samsung Galaxy Bizz](https://play.google.com/store/apps/details?id=com.setk.widget&hl=tr&gl=US) application to 15 Million devices in Turkey. Happy to see we hit the initial KPIs we had and I loved the smell of success as product manager for delivering a huge end-to-end product development process. 
 
-**2020 —** I've made a switch at [Bond Digital](https://www.linkedin.com/company/the-bond-digital/) and my new role is Technical Account Manager for Samsung. 
+**2020 —** I've decided to learn React as a solo-learner since it has the most online resources and one of most modern ways for web development. After few video tutorials, finally I've found the one and completed [Helsinki University's Full Stack Open](https://fullstackopen.com/en) program. During this time, I've become a member of ReactJS Istanbul community and met perfect developers who are very supportive on my solo-learner journey.
+
+**2020 —** I've made a switch at [Bond Digital](https://www.linkedin.com/company/the-bond-digital/) and my new role is Samsung Technical Product Manager.
 
 *Samsung* has 8 digital products including mobile apps, preload ad models and all of them are available at all Samsung devices in Turkey. We work with Samsung how can we sell these product's ad slots to potential advertisers and finally, my job here, make sure all these ad-tech process goes smoothly. 
 

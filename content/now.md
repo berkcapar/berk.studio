@@ -2,27 +2,25 @@
 slug: now 
 title: Now
 description: What am I doing now?
-date: '2020-11-12'
+date: '2022-05-02'
 ---
 
 # Now Page
 
-This page is inspired by Derek Siver's [now page](https://nownownow.com/about) which is main aim tell you what I am focused on this point of my life. Shout out to my best brain buddy [Altay Aydemir](https://altay.wtf/) who introduces me this concept and help me stay motivated most of the time.
+This page is inspired by Derek Siver's [now page](https://nownownow.com/about) which is main aim tell you what I am focused on this point of my life. 
 
-**10-6**
+**Day Time Hustle**
 
-- Working at Bond Digital as Samsung Technical Account Manager.
-- Trying to make move to more product oriented start-up.
+- Working at Experteer as Senior Product Manager.
 
 **Learning**
 
-- Aiming to get better by everyday on ReactJS.
+- Design Thinking
 - Next.js
 
 **Building**
 
-- MERN stack Movie Search App which users can create movie collections.
-- Portfolio page for my girlfriend Deniz Erden using Next.js
+- SaaS product called Collectwork that aims to help people on their job search.
 
 **Reading**
 
@@ -31,5 +29,5 @@ This page is inspired by Derek Siver's [now page](https://nownownow.com/about) w
 
 **Watching** 
 
-- Succession -  Season 2
-- Better Call Saul -  Season 5
+- Severance 
+- Better Call Saul 

@@ -19,7 +19,7 @@ const Navigation = () => {
         nav {
           padding: 0;
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
         }
         nav a {
           margin-top: 1rem;
@@ -30,9 +30,10 @@ const Navigation = () => {
         }
         @media (min-width: 675px) {
           nav {
+            
           }
           nav a {
-            margin-right: 2rem;
+            margin-left: 1rem;
           }
         }
       `}</style>

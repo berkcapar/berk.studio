@@ -5,13 +5,12 @@ const Welcome = () => {
   return (
     <div className="welcomecontainer">
       <div className="firstpar">
-        <h2>Hello</h2>
+      <h2>Hey, it's Berk. </h2>
         <span className="wave">👋</span>
       </div>
       <div className="subcontainer">
-        <h2>I'm Berk Çapar</h2>
-        <h3>I am product manager who design and build things for web.</h3>
-        <p>Product Manager at Experteer</p>
+        <h3>I am the product manager building digital features for great products. </h3>
+        <p>Senior Product Manager at Experteer</p>
         <p>Based in Munich 🇩🇪</p>
       </div>
       <nav>
@@ -27,8 +26,9 @@ const Welcome = () => {
         </Link>
       </nav>
       <div className="externalcontainer">
-        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin</a>
+        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/berkcapar">Github</a>
+        
       </div>
       <style jsx>
         {`
@@ -113,8 +113,8 @@ const Welcome = () => {
           }
           @media (min-width: 675px) {
             .welcomecontainer {
-              width: 50%;
-              margin: 1rem auto;
+              width: 52%;
+              margin: 0.5rem auto;
             }
           }
         `}

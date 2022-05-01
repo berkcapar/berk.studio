@@ -1,84 +1,49 @@
 import Layout from "../components/Layout";
-import ProjectsNav from "../components/ProjectsNav";
-import Link from "next/link";
-
 const Projects = () => {
   return (
     <div>
       <Layout />
-      <ProjectsNav />
       <div className="product-manager-roles-container">
+        <h2 className="product-manager-roles-container-title">Projects</h2>
         <div className="product-manager-roles">
-          <img alt="Samsung Galaxy Bizz" src="./GalaxyBizz.png" />
-          <div className="product-manager-roles-text">
-            <h3>Samsung Galaxy Bizz</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.setk.widget&hl=tr&gl=US">Samsung Galaxy Bizz</a>
             <p>
-              I have determined a product strategy for the new version of
-              Samsung Galaxy Bizz, the content application installed on more
-              than 15 million Samsung devices. Then, together with the software
-              and design teams, we released the new version of the application
-              in the targeted time. In the new version, the number of logged in
-              users increased 30 percent, first day retention 15 percent and
-              advertising revenue 45 percent.
+              Worked as Product Manager in all product discovery, strategy and delivery phases to build new generation content application for 15 Million users.
             </p>
-          </div>
         </div>
         <div className="product-manager-roles">
-          <img alt="Samsung OMC" src="./OMC.png" />
-          <div className="product-manager-roles-text">
-            <h3>Samsung OMC</h3>
+            <a href="https://streamable.com/mgo1lq">Experteer Cv-to-Profile</a>           
             <p>
-              I analyzed the monthly and annual performance data of more than 10
-              brands in Samsung's in-house pre-install project OMC, and with the
-              optimization plans I prepared based on the results, I increased
-              the revenue of the product by 40% compared to the previous period.
+            As a premium career SaaS, Experteer relies upon lots of user data to offer better position suggestions to its users. Worked as a product manager; my take was defining the strategy, setting success metrics and creating an agile environment for the team to build the MVP of product that analyzes the CV and creates user profiles instantly.
             </p>
-          </div>
         </div>
         <div className="product-manager-roles">
-          <img alt="Digital Turbine" src="./AppWizard.png" />
-          <div className="product-manager-roles-text">
-            <h3>Digital Turbine App Wizard</h3>
+            <a href="https://kobiozel.onedio.com">Onedio Ad Dashboard</a>
             <p>
-              I've turned App Wizard, which is pre-install technology developed
-              by Digital Turbine and pre-installed in Samsung devices in Turkey
-              is the most demanded and profitable product in the company by
-              making sure more than 40 apps have been got seamless experience.
+            Onedio wants to build an ad dashboard for small and medium scaled companies so they can create their campaigns easily. Creating product requirements document, aligning stakeholders and executing the plan with the cross-functional team was my to-do's while we were hitting the goals.            </p>
+        </div>
+     
+        <div className="product-manager-roles">
+          <a href="https://www.denizerden.com"> denizerden.com
+          </a>
+      
+            <p>Musician Portfolio that I built with Next.js</p>
+        </div>
+        <div className="product-manager-roles">
+          <a href="https://www.ergunbaydi.com"> ergunbaydi.com
+          </a>
+          
+            <p>Photographer Portfolio that I built with Next.js</p>
+            </div>
+        <div className="product-manager-roles">
+          <a href="https://github.com/berkcapar/Movie-Memory-App">moviememory[dot]com
+          </a>
+            <p>
+              Personal learning project that makes movie search possible from IMDB API. I builded with MERN stack including
+              login, search and save features.
             </p>
           </div>
-        </div>
-      </div>
-      <div className="developer-roles-container">
-        <div className="developer-roles">
-          <a href="https://www.denizerden.com">
-            <img href="" alt="Deniz Erden" src="./denizerden.png" />
-          </a>
-          <div className="developer-roles-text">
-            <h3>denizerden.com</h3>
-            <p>Musician Portfolio builded with Next.js</p>
-          </div>
-        </div>
-        <div className="developer-roles">
-          <a href="https://www.ergunbaydi.com">
-            <img alt="Ergün Baydı" src="./ergunbaydi.png" />
-          </a>
-          <div className="product-manager-roles-text">
-            <h3>ergunbaydi.com</h3>
-            <p>Photographer Portfolio builded with Next.js</p>
-          </div>
-        </div>
-        <div className="developer-roles">
-          <a href="https://www.ergunbaydi.com">
-            <img alt="React Project" src="./movieapp.png" />
-          </a>
-          <div className="product-manager-roles-text">
-            <h3>Movie Memory</h3>
-            <p>
-              Movie Search from IMDB API. builded with MERN stack including
-              login, search, add to fav features.
-            </p>
-          </div>
-        </div>
+        
       </div>
 
       <style jsx>{`
@@ -87,17 +52,17 @@ const Projects = () => {
           width: 50%;
           margin: 0 auto;
         }
+        .product-manager-roles-container-title{
+          margin-bottom:1.5rem;
+        } 
         .product-manager-roles,
         .developer-roles {
           display: flex;
-          justify-content: space-around;
-          padding-bottom: 1rem;
+          flex-direction:column;
+          padding-bottom: 0.1rem;
           margin-top: 1rem;
-          border-bottom: 1px solid white;
         }
-        .developer-roles-container {
-          padding-top: 5rem;
-        }
+       
         .product-manager-roles img {
           max-width: 200px;
           width: 40%;
@@ -108,12 +73,22 @@ const Projects = () => {
         .developer-roles a {
           width: 60%;
         }
+
+        .product-manager-roles a {
+          width: 60%;
+        }
         .product-manager-roles div {
           width: 50%;
         }
         .developer-roles div {
           width: 30%;
         }
+        @media(max-width:675px){
+          .product-manager-roles-container{
+              width: 80%;
+          }
+          .product-manager-roles-container-title{
+          } 
       `}</style>
     </div>
   );
