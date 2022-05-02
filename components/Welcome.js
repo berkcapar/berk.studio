@@ -27,9 +27,9 @@ const Welcome = () => {
         
       </nav>
       <div className="externalcontainer">
-        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fas fa-long-arrow-alt-right"></i></a>
-        <a href="https://github.com/berkcapar">Github<i className="fas fa-long-arrow-alt-right"></i></a>
-        <a href="https://twitter.com/bcaparing">Twitter<i className="fas fa-long-arrow-alt-right"></i></a>
+      <a href="mailto:berkcapar@gmail.com">Email <i className="fas fa-envelope fa-x"></i></a>
+        <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fab fa-linkedin fa-x"></i></a>
+        <a href="https://twitter.com/bcaparing">Twitter<i className="fab fa-twitter fa-x"></i></a>
         
       </div>
       <style jsx>
@@ -110,8 +110,8 @@ const Welcome = () => {
           }
           i {
             color: lightsalmon;
-            margin-left: 0.25rem;
-            padding-top: 0.25rem;
+            margin-left: 0.5rem;
+           
           }
           @media (min-width: 675px) {
             .welcomecontainer {

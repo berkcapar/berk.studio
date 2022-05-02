@@ -12,8 +12,8 @@ const Navigation = () => {
       <Link href="/projects">
         <a>Projects</a>
       </Link>
-      <Link href="/contact">
-        <a>Contact</a>
+      <Link href="/blog">
+        <a>Blog</a>
         
       </Link>
       <style jsx>{`
