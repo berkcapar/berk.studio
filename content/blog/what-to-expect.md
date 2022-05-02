@@ -13,3 +13,4 @@ I’ve been around on earth for 28 years, spending almost a quarter of it on dig
 
 Currently, new posts are in the writing process and sooner, they will be placed here, in their new homes. Until then, here is a surrealistic painting from Korean artist Jung-Yeon Min.
 
+![Jung-Yeon Min](/blog/whattoexpect.jpeg#thumbnail)

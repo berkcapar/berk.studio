@@ -25,20 +25,22 @@ export async function getStaticProps() {
   const what_to_expect = ({ content, data }) => ( 
     <div>
       <Layout />
-      <div className="whocontent">
+      <div className="blogcontent">
         {/* burada reactmarkdown'a pass eyledik */}
         <ReactMarkdown children={content} />
+   
       </div>
       <style jsx>{`
-        .whocontent{
+        .blogcontent{
           color: white;
           width: 70%;
           margin: 1rem auto;
         }
         @media(min-width:675px){
-          .whocontent{
+          .blogcontent{
               width: 50%;
-          }  
+          }
+         
         }
       `}</style>
     </div>

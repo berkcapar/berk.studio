@@ -30,3 +30,7 @@ a {
 * {
   box-sizing: border-box;
 }
+img[src*="#thumbnail"] {
+width: 70%;
+
+}
