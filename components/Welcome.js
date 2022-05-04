@@ -9,7 +9,8 @@ const Welcome = () => {
         <span className="wave">👋</span>
       </div>
       <div className="subcontainer">
-        <h3>I am the product manager building digital experiences for great products. </h3>
+        <h3>I am the product manager building digital experiences that solve
+real customer problems. </h3>
         <p>Senior Product Manager at Experteer</p>
         <p>Based in Munich 🇩🇪</p>
       </div>
