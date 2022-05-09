@@ -32,7 +32,7 @@ const Who = ({ content, data }) => (
     <style jsx>{`
       .whocontent{
         color: white;
-        width: 70%;
+        width: 80%;
         margin: 1rem auto;
       }
       @media(min-width:675px){

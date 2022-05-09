@@ -15,9 +15,17 @@ export default Blog
 const postdescs = [
     {
         id: 1,
+        title: 'Defining success as product manager',
+        description: 'What to expect from this blog and one artwork for you.',
+        date: '09.05.22'
+    },
+   
+    {
+        id: 2,
         title: 'What to expect',
         description: 'What to expect from this blog and one artwork for you.',
         date: '01.05.22'
-    }
+    },
+ 
 
 ]

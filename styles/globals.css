@@ -9,7 +9,6 @@ body {
 
 h1,
 h2,
-h3,
 p
 {
   color:white;
@@ -22,6 +21,11 @@ strong{
 }
 
 a {
+  color: lightsalmon;
+  text-decoration: none;
+}
+
+h3 {
   color: lightsalmon;
   text-decoration: none;
 }

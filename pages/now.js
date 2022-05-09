@@ -33,6 +33,7 @@ const Now = ({ content, data }) => (
     <Layout />    
     <div className="nowcontent"> 
       {/* burada reactmarkdown'a pass eyledik */}
+      <h2>Now Page</h2>
       <ReactMarkdown children={content} />
     </div>
     
@@ -49,10 +50,11 @@ const Now = ({ content, data }) => (
     .now-relative-date{
       color: white;
       width: 80%;
+      margin: 2rem auto;
     }
     @media(min-width:675px){
       .nowcontent{
-        width:50%;
+        width: 50%;
       }
       .now-relative-date{
         width:50%;

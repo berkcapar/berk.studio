@@ -1,16 +1,16 @@
-### **Motto**
+## **Motto**
 
 > “Learn to sell, learn to build, if you can do both, you will be unstoppable.” - Naval Ravikant
 
 
-### **What I Do**
+## **What I Do**
 
 📍 Living in Munich
 
 🧑🏽‍💻 Working at Experteer as Senior Product Manager
 
 
-### **What I Did**
+## **What I Did**
 
 **2022 —** I've launched my first big product in the company, which analyzes CVs and creates profiles from them. We want to increase the profile creation rate with the MVP launch and see improvements on it in a short period.
 

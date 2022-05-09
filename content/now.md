@@ -5,7 +5,7 @@ description: What am I doing now?
 date: '2022-05-02'
 ---
 
-# **Now Page**
+
 
 This page is inspired by Derek Siver's [now page](https://nownownow.com/about) which is main aim tell you what I am focused on this point of my life. 
 
