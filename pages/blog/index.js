@@ -16,7 +16,7 @@ const postdescs = [
     {
         id: 1,
         title: 'Defining success as product manager',
-        description: 'What to expect from this blog and one artwork for you.',
+        description: 'Guideline to handle the most famous PM task ',
         date: '09.05.22'
     },
    
