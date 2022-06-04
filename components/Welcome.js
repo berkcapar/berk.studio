@@ -11,8 +11,9 @@ const Welcome = () => {
       <div className="subcontainer">
         <h3>I am the product manager building digital experiences that solve
 real customer problems. </h3>
-        <p>Senior Product Manager at Experteer</p>
-        <p>Based in Munich 🇩🇪</p>
+<p>Product Manager at <a href="https://stackoverflow.co/advertising/">Stack Overflow</a></p>
+           
+        <p>Based in Berlin and Istanbul</p>
       </div>
       <nav>
         <Link href="/who">
@@ -97,6 +98,9 @@ real customer problems. </h3>
           .subcontainer {
             margin-left: 1rem;
           }
+          .subcontaniner {
+            color: #F47F24;
+          }
           .externalcontainer {
             color: white;
             display: flex;
@@ -114,6 +118,16 @@ real customer problems. </h3>
             margin-left: 0.5rem;
            
           }
+          .current-job{
+            display:flex;
+            justify-content:flex-start;     
+          }
+         .current-job img{
+           width: 10%;
+         }
+         .current-job p{
+           width:50%;
+         } 
           @media (min-width: 675px) {
             .welcomecontainer {
               width: 50%;

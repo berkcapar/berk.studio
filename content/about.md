@@ -5,12 +5,16 @@
 
 ## **What I Do**
 
-📍 Living in Munich
+📍 Living in Berlin
 
-🧑🏽‍💻 Working at Experteer as Senior Product Manager
+🧑🏽‍💻 Working at Stack Overflow as Product Manager
 
 
 ## **What I Did**
+
+**2022 —** I left Experteer because of the irresistible urge of relocating to Berlin,  and started looking for a new challenge! After interviewing with a few different companies and lots of learning, I just landed a Product Manager position in Stack Overflow for their community awareness products.
+
+---
 
 **2022 —** I've launched my first big product in the company, which analyzes CVs and creates profiles from them. We want to increase the profile creation rate with the MVP launch and see improvements on it in a short period.
 

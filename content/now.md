@@ -11,7 +11,7 @@ This page is inspired by Derek Siver's [now page](https://nownownow.com/about) w
 
 **Day Time Hustle**
 
-- Working at Experteer as Senior Product Manager.
+- Working at Stack Overflow as Product Manager.
 
 **Learning**
 
