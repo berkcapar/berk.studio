@@ -3,16 +3,16 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <nav>
-      <Link href="/who">
+      <Link href="/who" legacyBehavior>
         <a>Who</a>
       </Link>
-      <Link href="/now">
+      <Link href="/now" legacyBehavior>
         <a>Now</a>
       </Link>
-      <Link href="/projects">
+      <Link href="/projects" legacyBehavior>
         <a>Projects</a>
       </Link>
-      <Link href="/blog">
+      <Link href="/blog" legacyBehavior>
         <a>Blog</a>
         
       </Link>

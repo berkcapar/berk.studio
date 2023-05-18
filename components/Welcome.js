@@ -16,12 +16,12 @@ real customer problems. </h3>
         <p>Based in Berlin and Istanbul</p>
       </div>
       <nav>
-        <Link href="/who">
+        <Link href="/who" legacyBehavior>
           <a>
             More about me<i className="fas fa-long-arrow-alt-right"></i>
           </a>
         </Link>
-        <Link href="/now">
+        <Link href="/now" legacyBehavior>
           <a>
             What am I doing now <i className="fas fa-long-arrow-alt-right"></i>
           </a>

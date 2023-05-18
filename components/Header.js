@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="sitetitle">
-      <Link href="/">
+      <Link href="/" legacyBehavior>
         <a>
           <h1>Berk Çapar</h1>
         </a>
