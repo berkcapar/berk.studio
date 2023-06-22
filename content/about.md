@@ -7,10 +7,13 @@
 
 📍 Living in Berlin
 
-🧑🏽‍💻 Working at Stack Overflow as Product Manager
+🧑🏽‍💻 Looking for my next full time gig in Product Management
 
+🦸🏻 Building a SaaS AI marketing assistant
 
 ## **What I Did**
+
+**2023 —** Worked one year in Stack Overflow, met with tons of smart peers, truly great journey with lots of hands on experience. My time disappointingly came to an end with mass layoffs. After the initial shock pass, I started to interview with lots of great companies to find my next oppurtunity.
 
 **2022 —** I left Experteer because of the irresistible urge of relocating to Berlin,  and started looking for a new challenge! After interviewing with a few different companies and lots of learning, I just landed a Product Manager position in Stack Overflow for their community awareness products.
 

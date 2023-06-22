@@ -6,43 +6,43 @@ const Projects = () => {
       <div className="product-manager-roles-container">
         <h2 className="product-manager-roles-container-title">Projects</h2>
         <div className="product-manager-roles">
-            <a href="https://play.google.com/store/apps/details?id=com.setk.widget&hl=tr&gl=US">Samsung Galaxy Bizz</a>
+            <a href="https://stackoverflow.blog/2023/02/01/announcing-more-ways-to-learn-and-grow-your-skills/">Online Course Recommendations - 2023</a>
             <p>
-              Worked as Product Manager in all product discovery, strategy and delivery phases to build new generation content application for 15 Million users.
+          Backed with ML model, I worked as a product manager to make online course recommendations from Udemy and Pluralsight based on users interest on Stack Overflow platform.
             </p>
         </div>
         <div className="product-manager-roles">
-            <a href="https://streamable.com/mgo1lq">Experteer Cv-to-Profile</a>           
+            <a href="https://streamable.com/mgo1lq">Experteer Cv-to-Profile - 2022</a>           
             <p>
             As a premium career SaaS, Experteer relies upon lots of user data to offer better position suggestions to its users. Worked as a product manager; my take was defining the strategy, setting success metrics and creating an agile environment for the team to build the MVP of product that analyzes the CV and creates user profiles instantly.
             </p>
         </div>
         <div className="product-manager-roles">
-            <a href="https://kobiozel.onedio.com">Onedio Ad Dashboard</a>
+            <a href="https://play.google.com/store/apps/details?id=com.setk.widget&hl=tr&gl=US">Samsung Galaxy Bizz - 2021</a>
+            <p>
+              Worked as Product Manager in all product discovery, strategy and delivery phases to build new generation content application for 15 Million users.
+            </p>
+        </div>
+      
+        <div className="product-manager-roles">
+            <a href="https://kobiozel.onedio.com">Onedio Ad Dashboard - 2018</a>
             <p>
             Onedio wants to build an ad dashboard for small and medium scaled companies so they can create their campaigns easily. Creating product requirements document, aligning stakeholders and executing the plan with the cross-functional team was my to-do's while we were hitting the goals.            </p>
         </div>
      
         <div className="product-manager-roles">
-          <a href="https://www.denizerden.com"> denizerden.com
+          <a href="https://www.denizerden.com"> denizerden.com - 2020
           </a>
       
             <p>Musician Portfolio that I built with Next.js</p>
         </div>
         <div className="product-manager-roles">
-          <a href="https://www.ergunbaydi.com"> ergunbaydi.com
+          <a href="https://www.ergunbaydi.com"> ergunbaydi.com - 2020
           </a>
           
             <p>Photographer Portfolio that I built with Next.js</p>
             </div>
-        <div className="product-manager-roles">
-          <a href="https://github.com/berkcapar/Movie-Memory-App">moviememory[dot]com
-          </a>
-            <p>
-              Personal learning project that makes movie search possible from IMDB API. I builded with MERN stack including
-              login, search and save features.
-            </p>
-          </div>
+       
         
       </div>
 

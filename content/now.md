@@ -2,32 +2,33 @@
 slug: now 
 title: Now
 description: What am I doing now?
-date: '2022-05-02'
+date: '2022-06-19'
 ---
-
-
-
-This page is inspired by Derek Siver's [now page](https://nownownow.com/about) which is main aim tell you what I am focused on this point of my life. 
 
 **Day Time Hustle**
 
-- Working at Stack Overflow as Product Manager.
+- Impacted recent layoffs from Stack Overflow while Working as Product Manager, interviewing a lot for the next oppurtunity 🤞🏽
 
 **Learning**
 
-- Design Thinking
-- Next.js
+- Writing Skills
+- Advancing in SQL
 
 **Building**
 
-- SaaS product called Collectwork that aims to help people on their job search.
+- AI marketing asisstant calle called StuntAI that turns marketing briefs to text based campaign outcomes.
 
 **Reading**
 
-- Hell Yeah or No by Derek Sivers
-- Laws of UX by Jon Jablovski
+- Talking Strangers by Malcolm Gladwell
+- Les Promises by Jean-Christophe Grangé
+
+**Podcasts**
+
+- Lenny's Podcast by Lenny Rachitsky
+
 
 **Watching** 
 
-- Severance 
-- Better Call Saul 
+- Succession 
+- The Last of Us
