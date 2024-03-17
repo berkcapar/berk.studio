@@ -20,7 +20,6 @@ const Contact = () => {
         </div>
         <div className="contact-media">
         <a href="https://www.linkedin.com/in/berkcapar/">Linkedin</a>
-        <a href="https://github.com/berkcapar">Github</a>
         </div>
       </div>
       <style jsx>{`

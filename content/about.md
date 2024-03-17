@@ -7,7 +7,7 @@
 
 📍 Living in Berlin
 
-🧑🏽‍💻 Looking for my next full time gig in Product Management
+🧑🏽‍💻 Working in Yara International as Product Manager
 
 🦸🏻 Building a SaaS AI marketing assistant
 

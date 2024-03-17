@@ -2,33 +2,23 @@
 slug: now 
 title: Now
 description: What am I doing now?
-date: '2022-06-19'
+date: '2024-03-17'
 ---
-
-**Day Time Hustle**
-
-- Impacted recent layoffs from Stack Overflow while Working as Product Manager, interviewing a lot for the next oppurtunity 🤞🏽
-
-**Learning**
-
-- Writing Skills
-- Advancing in SQL
 
 **Building**
 
-- AI marketing asisstant calle called StuntAI that turns marketing briefs to text based campaign outcomes.
+- AI marketing assistant called [StuntAI](http://www.stuntai.co) that turns marketing briefs into text-based campaign outcomes. Join waitlist!
 
-**Reading**
+**Product Management**
 
-- Talking Strangers by Malcolm Gladwell
-- Les Promises by Jean-Christophe Grangé
+- Working at [Yara International](https://www.yara.com/digital-farming/) to solve problems for farmers and food producers against changing climate enviroment and increasing demand with different sets of digital products.
+
+**Learning**
+
+- Working for your own side project means tons of learning from how to figure out payments, legal stuff, technicial implementations, design decisions! 
+- Yet, the fun part is working with LLMs and seeing how it changes the product development. I'm trying to improve my prompt engineering skill these days.
 
 **Podcasts**
 
+- The Ben and Emil Show
 - Lenny's Podcast by Lenny Rachitsky
-
-
-**Watching** 
-
-- Succession 
-- The Last of Us

@@ -3,9 +3,9 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <nav>
-      <Link href="/who" legacyBehavior>
-        <a>Who</a>
-      </Link>
+      <a href="https://read.cv/berkcapar" target="_blank" rel="noopener noreferrer">
+  Resume
+</a>
       <Link href="/now" legacyBehavior>
         <a>Now</a>
       </Link>

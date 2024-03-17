@@ -15,17 +15,18 @@ const Welcome = () => {
           </h2>    {/* <span className="wave">👋</span> */}
       </div>
       <div className="subcontainer">
-        <h3>The product manager focusing on digital experiences that solve the most impactful customer problems.</h3>
-        <p>With over 8 years of experience working with tech companies, startups, and agencies, I am a product manager who embraces data-informed product strategy and execution.</p>
+        <h3>The product builder focusing on digital experiences that solve the most impactful customer problems.</h3>
+        <p>With over 10 years of experience working with tech companies, startups, and agencies, I am a product builder who embraces data-informed product strategy and execution.</p>
         <p>I have worked with companies like Stack Overflow, Experteer, Bond Digital, dealing with B2B2C complexity, and led talented cross-functional teams of developers and designers. I closely collaborate with business stakeholders to build products and services that users love.</p>
-        <p>📍 Based in Berlin.</p>
+        <div className="subcontainer-work-section">  
+        <p>🦸🏻 Founder at <a href="https://www.stuntai.co/">StuntAI</a></p>
+        <p className="subcontainer-work-section-yara"> 👨🏽‍🌾 Product at <a href="https://www.yara.com/">Yara Digital Farming</a> </p>
+        </div>
+        <p className="based-berlin">📍 Based in Berlin.</p>
+
       </div>
       <nav>
-      <Link href="/who" legacyBehavior>
-  <a>
-    More about me <FontAwesomeIcon icon={faLongArrowAltRight} />
-  </a>
-</Link>
+    
 <Link href="/now" legacyBehavior>
   <a>
     What am I doing now <FontAwesomeIcon icon={faLongArrowAltRight} />
@@ -38,10 +39,7 @@ const Welcome = () => {
 </a>
 <a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fab fa-linkedin fa-x"></i></a>
         <a href="https://twitter.com/bcaparing">Twitter<i className="fab fa-twitter fa-x"></i></a>
-<a href="https://substack.com/@berkcapar">
-  Substack <FontAwesomeIcon icon={faFeather} className="fa-x" />
-</a>
-        <a href="https://open.spotify.com/user/1165537105?r=">Spotify <i className="fab fa-spotify fa-x"></i></a>
+
       </div>
       <LatestProject />
       <div className="horizontal_dotted_line"></div>
@@ -147,7 +145,7 @@ const Welcome = () => {
       color: white;
       display: flex;
       margin-left: 1rem;
-      justify-content: space-between;
+      justify-content: start;
     }
     .externalcontainer a {
       border: 1px solid white;
@@ -201,7 +199,10 @@ const Welcome = () => {
     .latestblog-image-section:hover img {
       transform: scale(1.05);
     }
-
+    .subcontainer work-section{
+      display: flex;
+      flex-direction: row;
+    }
     @media (min-width: 675px) {
       .welcomecontainer {
         width: 50%;
@@ -246,6 +247,17 @@ const Welcome = () => {
         width: 100%;
         border-radius: 8px;
         transition: transform 0.3s;
+      }
+      .subcontainer-work-section{
+        display: flex;
+        flex-direction: row;
+      }
+      .subcontainer-work-section-yara{
+        padding-left: 1rem;
+      }
+      .based-berlin{
+        margin-bottom: 0px;
+        margin-top: 0px;
       }
     }
   `}
