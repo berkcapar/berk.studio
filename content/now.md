@@ -5,9 +5,6 @@ description: What am I doing now?
 date: '2024-03-17'
 ---
 
-**Building**
-
-- AI marketing assistant called [StuntAI](http://www.stuntai.co) that turns marketing briefs into text-based campaign outcomes. Join waitlist!
 
 **Product Management**
 
