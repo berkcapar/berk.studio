@@ -21,7 +21,7 @@ const Welcome = () => {
         <div className="subcontainer-work-section">  
         <p className="subcontainer-work-section-yara">👨🏽‍🌾 Product at <a href="https://www.yara.com/">Yara Digital Farming</a> </p>
         </div>
-        <p className="based-berlin">📍 Based in Berlin.</p>
+        <p className="based-berlin">📍 Basedd in Berlin.</p>
 
       </div>
       <nav>
