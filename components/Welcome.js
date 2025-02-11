@@ -19,7 +19,7 @@ const Welcome = () => {
         <p>With over 10 years of experience working with tech companies, startups, and agencies, I am a product builder who embraces data-informed product strategy and execution.</p>
         <p>I have worked with companies like Stack Overflow, Experteer, Bond Digital, dealing with B2B2C complexity, and led talented cross-functional teams of developers and designers. I closely collaborate with business stakeholders to build products and services that users love.</p>
         <div className="subcontainer-work-section">  
-        <p className="subcontainer-work-section-yara"> 👨🏽‍🌾 Product at <a href="https://www.yara.com/">Yara Digital Farming</a> </p>
+        <p className="subcontainer-work-section-yara">👨🏽‍🌾 Product at <a href="https://www.yara.com/">Yara Digital Farming</a> </p>
         </div>
         <p className="based-berlin">📍 Based in Berlin.</p>
 
