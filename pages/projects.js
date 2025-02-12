@@ -1,98 +1,231 @@
 import Layout from "../components/Layout";
+import { useState } from "react";
+
 const Projects = () => {
+  const [activeFilter, setActiveFilter] = useState('all');
+
+  const projects = [
+    {
+      title: "YaraPlus GrassN",
+      year: "2024",
+      category: "product",
+      description: "Led the development and launch of a nutrition planning tool that helps farmers optimize their grassland nutrition and achieve higher yields.",
+      link: "https://www.yara.de/news-veranstaltungen/news/grassn-jetzt-in-yaraplus/",
+      tags: ["Product Management", "Agriculture Tech", "User Research"]
+    },
+    {
+      title: "Online Course Recommendations",
+      year: "2023",
+      category: "product",
+      description: "Backed with ML model, I worked as a product manager to make online course recommendations from Udemy and Pluralsight based on users interest on Stack Overflow platform.",
+      link: "https://stackoverflow.blog/2023/02/01/announcing-more-ways-to-learn-and-grow-your-skills/",
+      tags: ["Machine Learning", "Product Management", "Stack Overflow"]
+    },
+    {
+      title: "Experteer Cv-to-Profile",
+      year: "2022",
+      category: "product",
+      description: "As a premium career SaaS, Experteer relies upon lots of user data to offer better position suggestions to its users. Worked as a product manager; my take was defining the strategy, setting success metrics and creating an agile environment for the team to build the MVP of product that analyzes the CV and creates user profiles instantly.",
+      link: "https://streamable.com/mgo1lq",
+      tags: ["SaaS", "MVP", "Product Strategy"]
+    },
+    {
+      title: "Samsung Galaxy Bizz",
+      year: "2021",
+      category: "product",
+      description: "Worked as Product Manager in all product discovery, strategy and delivery phases to build new generation content application for 15 Million users.",
+      link: "https://play.google.com/store/apps/details?id=com.setk.widget&hl=tr&gl=US",
+      tags: ["Mobile App", "Content Platform", "Product Discovery"]
+    },
+    {
+      title: "Personal Website",
+      year: "2021",
+      category: "development",
+      description: "My personal website built with Next.js, featuring my portfolio, blog, and resume.",
+      link: "https://github.com/yourusername/personal-website",
+      tags: ["Next.js", "React", "Portfolio"]
+    },
+    {
+      title: "denizerden.com",
+      year: "2020",
+      category: "development",
+      description: "Musician Portfolio that I built with Next.js",
+      link: "https://www.denizerden.com",
+      tags: ["Next.js", "Portfolio", "Web Development"]
+    }
+  ];
+
   return (
-    <div>
-      <Layout />
-      <div className="product-manager-roles-container">
-        <h2 className="product-manager-roles-container-title">Projects</h2>
-        <div className="product-manager-roles">
-            <a href="https://stackoverflow.blog/2023/02/01/announcing-more-ways-to-learn-and-grow-your-skills/">Online Course Recommendations - 2023</a>
-            <p>
-          Backed with ML model, I worked as a product manager to make online course recommendations from Udemy and Pluralsight based on users interest on Stack Overflow platform.
-            </p>
-        </div>
-        <div className="product-manager-roles">
-            <a href="https://streamable.com/mgo1lq">Experteer Cv-to-Profile - 2022</a>           
-            <p>
-            As a premium career SaaS, Experteer relies upon lots of user data to offer better position suggestions to its users. Worked as a product manager; my take was defining the strategy, setting success metrics and creating an agile environment for the team to build the MVP of product that analyzes the CV and creates user profiles instantly.
-            </p>
-        </div>
-        <div className="product-manager-roles">
-            <a href="https://play.google.com/store/apps/details?id=com.setk.widget&hl=tr&gl=US">Samsung Galaxy Bizz - 2021</a>
-            <p>
-              Worked as Product Manager in all product discovery, strategy and delivery phases to build new generation content application for 15 Million users.
-            </p>
-        </div>
-      
-        <div className="product-manager-roles">
-            <a href="https://kobiozel.onedio.com">Onedio Ad Dashboard - 2018</a>
-            <p>
-            Onedio wants to build an ad dashboard for small and medium scaled companies so they can create their campaigns easily. Creating product requirements document, aligning stakeholders and executing the plan with the cross-functional team was my to-do's while we were hitting the goals.            </p>
-        </div>
-     
-        <div className="product-manager-roles">
-          <a href="https://www.denizerden.com"> denizerden.com - 2020
-          </a>
-      
-            <p>Musician Portfolio that I built with Next.js</p>
-        </div>
-        <div className="product-manager-roles">
-          <a href="https://www.ergunbaydi.com"> ergunbaydi.com - 2020
-          </a>
-          
-            <p>Photographer Portfolio that I built with Next.js</p>
-            </div>
-       
+    <Layout>
+      <div className="projects-container">
+        <h1 className="title">Projects</h1>
         
+        <div className="filters">
+          <button 
+            className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('all')}
+          >
+            All
+          </button>
+          <button 
+            className={`filter-btn ${activeFilter === 'product' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('product')}
+          >
+            Product Management
+          </button>
+          <button 
+            className={`filter-btn ${activeFilter === 'development' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('development')}
+          >
+            Development
+          </button>
+        </div>
+
+        <div className="projects-grid">
+          {projects
+            .filter(project => activeFilter === 'all' || project.category === activeFilter)
+            .map((project, index) => (
+              <div key={index} className="project-card">
+                <div className="project-header">
+                  <h3>{project.title}</h3>
+                  <span className="year">{project.year}</span>
+                </div>
+                <p className="description">{project.description}</p>
+                <div className="tags">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="tag">{tag}</span>
+                  ))}
+                </div>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  View Project →
+                </a>
+              </div>
+          ))}
+        </div>
       </div>
 
       <style jsx>{`
-        .product-manager-roles-container,
-        .developer-roles-container {
-          width: 50%;
+        .projects-container {
+          max-width: 1000px;
           margin: 0 auto;
+          padding-top: 4rem;
         }
-        .product-manager-roles-container-title{
-          margin-bottom:1.5rem;
+
+        .title {
+          font-size: 2.5rem;
+          margin-bottom: 2rem;
           color: white;
+        }
 
-        } 
-        .product-manager-roles,
-        .developer-roles {
+        .filters {
+          margin-bottom: 2rem;
           display: flex;
-          flex-direction:column;
-          padding-bottom: 0.1rem;
-          margin-top: 1rem;
-        }
-       
-        .product-manager-roles img {
-          max-width: 200px;
-          width: 40%;
-        }
-        .developer-roles img {
-          width: 100%;
-        }
-        .developer-roles a {
-          width: 60%;
+          gap: 1rem;
         }
 
-        .product-manager-roles a {
-          width: 60%;
+        .filter-btn {
+          padding: 0.5rem 1rem;
+          border: 1px solid #333;
+          background: transparent;
+          color: #fff;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: all 0.3s ease;
         }
-        .product-manager-roles div {
-          width: 50%;
+
+        .filter-btn:hover {
+          border-color: lightsalmon;
         }
-        .developer-roles div {
-          width: 30%;
+
+        .filter-btn.active {
+          background: lightsalmon;
+          border-color: lightsalmon;
         }
-        @media(max-width:675px){
-          .product-manager-roles-container{
-              width: 80%;
+
+        .projects-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 2rem;
+        }
+
+        .project-card {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
+          padding: 1.5rem;
+          transition: all 0.3s ease;
+          border: 1px solid transparent;
+        }
+
+        .project-card:hover {
+          transform: translateY(-5px);
+          border-color: lightsalmon;
+        }
+
+        .project-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+
+        .project-header h3 {
+          margin: 0;
+          color: #fff;
+        }
+
+        .year {
+          color: lightsalmon;
+        }
+
+        .description {
+          color: #ccc;
+          margin-bottom: 1rem;
+          line-height: 1.6;
+        }
+
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .tag {
+          background: rgba(255, 160, 122, 0.1);
+          color: lightsalmon;
+          padding: 0.25rem 0.75rem;
+          border-radius: 15px;
+          font-size: 0.875rem;
+        }
+
+        .project-link {
+          display: inline-block;
+          color: lightsalmon;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+          color: #ff7f50;
+        }
+
+        @media (max-width: 768px) {
+          .projects-container {
+            padding: 1rem;
+            margin-top: 5rem;
           }
-          .product-manager-roles-container-title{
-          } 
+
+          .filters {
+            flex-wrap: wrap;
+          }
+
+          .projects-grid {
+            grid-template-columns: 1fr;
+          }
+        }
       `}</style>
-    </div>
+    </Layout>
   );
 };
+
 export default Projects;

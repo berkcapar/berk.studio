@@ -1,14 +1,14 @@
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 import Welcome from "../components/Welcome";
 
-const Index = () => {
+export default function Home() {
   return (
-    <div>
-      <Layout />
-      <Welcome />
-    </div>
+    <Layout>
+      <div className="content">
+        <Welcome />
+      </div>
+    </Layout>
   );
-};
-export default Index;
+}
 
 

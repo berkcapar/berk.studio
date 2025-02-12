@@ -28,22 +28,47 @@ export async function getStaticProps() {
       <div className="blogcontent">
         {/* burada reactmarkdown'a pass eyledik */}
         <ReactMarkdown children={content} />
-   
       </div>
       <style jsx>{`
-        .blogcontent{
+        .blogcontent {
           color: white;
-          width: 70%;
-          margin: 1rem auto;
+          width: 100%;
+          margin: 5rem auto;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+                       Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 
+                       sans-serif; /* Consistent font family */
+          font-size: 16px; /* Base font size */
+          line-height: 1.6; /* Line height for readability */
         }
-    
-        @media(min-width:675px){
-          .blogcontent{
-              width: 50%;
+
+        .blogcontent :global(h1),
+        .blogcontent :global(h2),
+        .blogcontent :global(h3) {
+          margin-bottom: 1rem;
+          color: lightsalmon; /* Heading color */
+        }
+
+        .blogcontent :global(p) {
+          margin-bottom: 1rem;
+        }
+
+        .blogcontent :global(ul) {
+          padding-left: 20px;
+          list-style-position: inside;
+        }
+
+        .blogcontent :global(li) {
+          margin-bottom: 0.5rem;
+        }
+
+        @media(min-width: 675px) {
+          .blogcontent {
+            width: 70%;
+            max-width: 1000px;
           }
-         
         }
       `}</style>
     </div>
-  );
-  export default when_to_embrace
+);
+
+export default when_to_embrace;

@@ -31,14 +31,40 @@ export async function getStaticProps() {
    
       </div>
       <style jsx>{`
-        .blogcontent{
+        .blogcontent {
           color: white;
           width: 70%;
-          margin: 1rem auto;
+          margin: 5rem auto;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+                       Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 
+                       sans-serif; /* Consistent font family */
+          font-size: 16px; /* Base font size */
+          line-height: 1.6; /* Line height for readability */
         }
+
+        .blogcontent :global(h1),
+        .blogcontent :global(h2),
+        .blogcontent :global(h3) {
+          margin-bottom: 1rem;
+          color: lightsalmon; /* Heading color */
+        }
+
+        .blogcontent :global(p) {
+          margin-bottom: 1rem;
+        }
+
+        .blogcontent :global(ul) {
+          padding-left: 20px;
+          list-style-position: inside;
+        }
+
+        .blogcontent :global(li) {
+          margin-bottom: 0.5rem;
+        }
+
         @media(min-width:675px){
           .blogcontent{
-              width: 50%;
+             max-width: 1000px;
           }
          
         }

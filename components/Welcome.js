@@ -1,270 +1,299 @@
-import React from "react";
-import Link from "next/link";
-import LatestProject from "./Latest_Project";
-import { getLatestBlogPost } from "../utils/blogutils";
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLinkedin, faTwitter, faPen, faFeather, faSpotify, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-const Welcome = () => {
-  const latestPost = getLatestBlogPost();
-
+export default function Welcome() {
   return (
-    <div className="welcomecontainer">
-      <div className="firstpar">
-        <h2>Hey, it's Berk.
-          </h2>    {/* <span className="wave">👋</span> */}
-      </div>
-      <div className="subcontainer">
-        <h3>The product builder focusing on digital experiences that solve the most impactful customer problems.</h3>
-        <p>With over 10 years of experience working with tech companies, startups, and agencies, I am a product builder who embraces data-informed product strategy and execution.</p>
-        <p>I have worked with companies like Stack Overflow, Experteer, Bond Digital, dealing with B2B2C complexity, and led talented cross-functional teams of developers and designers. I closely collaborate with business stakeholders to build products and services that users love.</p>
-        <div className="subcontainer-work-section">  
-        <p className="subcontainer-work-section-yara">👨🏽‍🌾 Product at <a href="https://www.yara.com/">Yara Digital Farming</a> </p>
-        </div>
-        <p className="based-berlin">📍 Basedd in Berlin.</p>
-
-      </div>
-      <nav>
-    
-<Link href="/now" legacyBehavior>
-  <a>
-    What am I doing now <FontAwesomeIcon icon={faLongArrowAltRight} />
-  </a>
-</Link>
-      </nav>
-      <div className="externalcontainer">
-      <a href="mailto:berkcapar@gmail.com">
-  Email <FontAwesomeIcon icon={faEnvelope} className="fa-x" />
-</a>
-<a href="https://www.linkedin.com/in/berkcapar/">Linkedin <i className="fab fa-linkedin fa-x"></i></a>
-        <a href="https://twitter.com/bcaparing">Twitter<i className="fab fa-twitter fa-x"></i></a>
-
-      </div>
-      <LatestProject />
-      <div className="horizontal_dotted_line"></div>
-      <div>
-        {latestPost && (
-          <div className="latestblog-container">
-              <div className="latestblog-title">
-            <h2>LATEST FROM BLOG</h2>
-            </div>
-            <div className="latestblog-content-section">   
-            <div className="latestblog-text-secton"> 
-            <Link href={latestPost.url}>
-            <h3>{latestPost.title}</h3>
-            <p>{latestPost.description}</p> 
-            </Link>
-            </div>
-            <div className="latestblog-image-section">    
-            <Link  href={`/${latestPost.url}`}>
-                <img src="/okr.jpeg" alt="Latest Blog Post" />
-            </Link></div>
-            
-          </div> 
+    <div className="content-container">
+      <div className="intro-section">
+        <h1>
+          Hey, I'm Berk <span className="wave" role="img" aria-label="waving hand">👋</span>
+        </h1>
+        <p className="tagline">
+          The product leader focusing on digital experiences that solve the most impactful customer problems.
+        </p>
+        
+        <div className="description">
+          <p>
+            With eight years of proven success as a product leader delivering innovative digital solutions across diverse sectors, 
+            I have built my career on transforming complex challenges into streamlined, user-centric products that drive measurable business outcomes.
+          </p>
+          <p>
+            I have worked with companies like Stack Overflow, Experteer, Bond Digital, dealing with B2B2C complexity, 
+            and led talented cross-functional teams of developers and designers. I closely collaborate with business stakeholders 
+            to build products and services that users love.
+          </p>
+          <div className="current-status">
+            <p>👨🏽‍🌾 Product at Yara Digital Farming</p>
+            <p>📍 Based in Berlin.</p>
           </div>
-        )}
-         <div className="horizontal_dotted_line"></div>
+        </div>
+        <nav className="navigation-links">
+          <Link href="/now" legacyBehavior>
+            <a className="nav-link">
+              <span>What am I doing now</span>
+              <FontAwesomeIcon icon={faLongArrowAltRight} />
+            </a>
+          </Link>
+          <div className="social-links">
+            <Link href="https://www.linkedin.com/in/berkcapar/" legacyBehavior>
+              <a className="nav-link social-link">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </Link>
+            <Link href="https://x.com/bcaparing" legacyBehavior>
+              <a className="nav-link social-link">
+                <img 
+                  src="https://i0.wp.com/friaryschool.co.uk/wp-content/uploads/2023/11/large-x-logo.png.twimg_.1920-e1699539508422.png?ssl=1" 
+                  alt="X (formerly Twitter)" 
+                  width="16" 
+                  height="16" 
+                  style={{ filter: 'brightness(0) invert(1)' }}
+                />
+              </a>
+            </Link>
+            <Link href="https://github.com/berkcapar" legacyBehavior>
+              <a className="nav-link social-link">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Link>
+          </div>
+        </nav>
+        <div className="latest-project">
+          <h2>Latest Launch 🚀</h2>
+          <div className="project-card">
+            <h3>YaraPlus GrassN Launch - Nutrition Planning Tool</h3>
+            <p className="project-date">2024</p>
+            <div className="project-details">
+              <p>Launch of Nutrition planning tool's newer version enables farmers to optimize their grassland nutrition and achieve higher yields.</p>
+              <ul>
+                <li>Conduct in person user interviews and led product discovery</li>
+                <li>Led a team of 7 developers and 2 designers to launch the new version of the tool</li>
+                <li>Achieving a 45 NPS (up 10 points) and 65% YoY increase in user engagement.</li>         
+              </ul>
+              <a 
+                href="https://www.yara.de/news-veranstaltungen/news/grassn-jetzt-in-yaraplus/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Read more about GrassN launch →
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <style jsx>{`
+        .content-container {
+          max-width: 1000px;   
+          margin: 4rem auto;
+        }
 
-      <style jsx>
-  {`
-    nav {
-      color: lightsalmon;
-      margin-top: 0.5rem;
-      padding-bottom: 2rem;
-      margin-left: 1rem;
-      width: 60%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    nav a {
-      margin-right: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .firstpar {
-      display: flex;
-      margin-left: 1rem;
-    }
-    .fa-x {
-      color: white;
-    }
-    .wave {
-      animation-name: wave-animation;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      transform-origin: 70% 70%;
-      display: inline-block;
-      margin-left: 0.5rem;
-      padding-top: 0.4rem;
-    }
-    .horizontal_dotted_line {
-      border-bottom: 2px dotted white;
-      margin-top: 1rem;
-    }
+        .intro-section {
+          margin-bottom: 2rem;
+        }
 
-    @keyframes wave-animation {
-      0% {
-        transform: rotate(0deg);
-      }
-      10% {
-        transform: rotate(14deg);
-      }
-      20% {
-        transform: rotate(-8deg);
-      }
-      30% {
-        transform: rotate(14deg);
-      }
-      40% {
-        transform: rotate(-4deg);
-      }
-      50% {
-        transform: rotate(10deg);
-      }
-      60% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
-    .welcomecontainer {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      width: 100%;
-    }
-    .subcontainer {
-      margin-left: 1rem;
-    }
-    .subcontaniner {
-      color: #F47F24;
-    }
-    .externalcontainer {
-      color: white;
-      display: flex;
-      margin-left: 1rem;
-      justify-content: start;
-    }
-    .externalcontainer a {
-      border: 1px solid white;
-      border-radius: 0.5rem;
-      margin-right: 1rem;
-      padding: 0.6rem;
-      color: white;
-    }
-    i {
-      color: lightsalmon;
-      margin-left: 0.5rem;
-    }
-    .current-job {
-      display: flex;
-      justify-content: flex-start;
-    }
-    .current-job img {
-      width: 10%;
-    }
-    .current-job p {
-      width: 50%;
-    }
-    .latestblog-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1rem;
-    }
-    .latestblog-title {
-      width: 50%;
-      margin-left: 1rem;
-    }
-    .latestblog-content-section {
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      margin-left: 1rem;
-    }
-    .latestblog-text-secton {
-      width: 100%;
-    }
-    .latestblog-image-section {
-      width: 100%;
-    }
-    .latestblog-image-section img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    .latestblog-image-section:hover img {
-      transform: scale(1.05);
-    }
-    .subcontainer work-section{
-      display: flex;
-      flex-direction: row;
-    }
-    @media (min-width: 675px) {
-      .welcomecontainer {
-        width: 50%;
-        margin: 0.5rem auto;
-      }
-      .subcontainer {
-        margin-left: 0;
-      }
-      .firstpar {
-        margin-left: 0rem;
-      }
-      nav {
-        margin-left: 0;
-      }
-      .externalcontainer {
-        margin-left: 0;
-      }
-      .latestblog-container {
-        flex-direction: column;
-        margin-left: 0rem;
-        margin-top: 1rem;
-      }
-      .latestblog-title {
-        margin-left: 0rem;
-      }
-      .latestblog-content-section {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 0rem;
-      }
-      .latestblog-text-secton {
-        width: 40%;
-        margin-left: 0rem;
-      }
-      .latestblog-image-section {
-        width: 50%;
-        display: flex;
-        justify-contenet: flex-end;
-      }
-      .latestblog-image-section img {
-        width: 100%;
-        border-radius: 8px;
-        transition: transform 0.3s;
-      }
-      .subcontainer-work-section{
-        display: flex;
-        flex-direction: row;
-      }
-      .subcontainer-work-section-yara{
-        padding-left: 1rem;
-      }
-      .based-berlin{
-        margin-bottom: 0px;
-        margin-top: 0px;
-      }
-    }
-  `}
-</style>
+        h1 {
+          font-size: 2.2rem;
+          margin-bottom: 0.5rem;
+          color: #fff;
+          animation: fadeIn 0.8s ease-in;
+        }
 
+        .tagline {
+          font-size: 1.2rem;
+          color: lightsalmon;
+          margin-bottom: 1.5rem;
+          line-height: 1.4;
+          animation: slideIn 0.8s ease-out;
+        }
+
+        .description {
+          animation: slideIn 1s ease-out;
+        }
+
+        .description p {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: rgba(255, 255, 255, 0.9);
+          margin-bottom: 1rem;
+        }
+
+        .current-status {
+          margin-top: 1.5rem;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        .current-status p {
+          margin-bottom: 0.5rem;
+        }
+
+        .latest-project {
+          margin: 3rem 0;
+          animation: slideIn 1s ease-out;
+        }
+
+        .latest-project h2 {
+          color: lightsalmon;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .project-card {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 12px;
+          padding: 1.5rem;
+          transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+          transform: translateY(-4px);
+        }
+
+        .project-card h3 {
+          color: #fff;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .project-date {
+          color: lightsalmon;
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+        }
+
+        .project-details {
+          color: rgba(255, 255, 255, 0.9);
+        }
+
+        .project-details p {
+          margin-bottom: 1rem;
+        }
+
+        .project-details ul {
+          list-style-type: none;
+          padding-left: 1rem;
+        }
+
+        .project-details li {
+          margin-bottom: 0.5rem;
+          position: relative;
+        }
+
+        .project-details li:before {
+          content: "•";
+          color: lightsalmon;
+          position: absolute;
+          left: -1rem;
+        }
+
+        .navigation-links {
+          margin-top: 2rem;
+        }
+
+        .nav-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.75rem 1.5rem;
+          background: rgba(129, 22, 168, 0.1);
+          border-radius: 8px;
+          color: #fff;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-size: 0.9rem;
+        }
+
+        .nav-link:hover {
+          background: rgba(129, 22, 168, 0.2);
+          transform: translateY(-2px);
+        }
+
+        .social-links {
+          margin-top: 1rem;
+          display: flex;
+          gap: 0.75rem;
+        }
+
+        :global(.social-link) {
+          padding: 0.75rem;
+          width: 45px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .wave {
+          display: inline-block;
+          font-size: 1.5em;
+          animation: wave 2.5s infinite;
+          transform-origin: 70% 70%;
+          margin-left: 0.3em;
+        }
+
+        @keyframes wave {
+          0% { transform: rotate(0deg); }
+          10% { transform: rotate(14deg); }
+          20% { transform: rotate(-8deg); }
+          30% { transform: rotate(14deg); }
+          40% { transform: rotate(-4deg); }
+          50% { transform: rotate(10deg); }
+          60% { transform: rotate(0deg); }
+          100% { transform: rotate(0deg); }
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .content-container {
+            margin: 5.5rem auto;
+            width: 90%;
+          }
+          .intro-section h1 {
+            text-align: center;
+          }
+          h1 {
+            font-size: 2rem;
+          }
+          .tagline {
+            font-size: 1.1rem;
+            text-align: center;
+          }
+          .description p {
+            font-size: 0.95rem;
+            text-align: center;
+          }
+          .navigation-links {
+            text-align: center;
+          }
+          .social-links {
+            justify-content: center;
+          }
+          .project-card {
+            padding: 1rem;
+          }
+          .latest-project h2 {
+            text-align: center;
+          }
+        }
+      `}</style>
     </div>
   );
-};
-
-
-export default Welcome;
+}

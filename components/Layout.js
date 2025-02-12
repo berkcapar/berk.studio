@@ -1,10 +1,10 @@
-const { default: Navigation } = require("./Navigation");
+import Navigation from './Navigation';
 import Head from "next/head";
-import Header from "./Header";
+
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Head>
         <script
           src="https://kit.fontawesome.com/c0e82ecf0e.js"
@@ -23,9 +23,7 @@ const Layout = ({ children }) => {
       </Head>
 
       <div className="container container-nav">
-        <div className="header">
-          <Header />
-        </div>
+        
         <div className="nav">
           <Navigation />
         </div>
@@ -38,7 +36,6 @@ const Layout = ({ children }) => {
             width: 90%;
             max-width: 1200px;
             color: white;
-            border-bottom: 0.01rem solid gray;
             display: flex;
             flex-direction: column;
           }
@@ -59,7 +56,24 @@ const Layout = ({ children }) => {
           }
         `}
       </style>
+
+      <style jsx global>{`
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+                       Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 
+                       sans-serif;
+         
+          color: #fff;
+        }
+      `}</style>
     </div>
   );
 };
+
 export default Layout;
