@@ -30,12 +30,7 @@ export default function Welcome() {
           </div>
         </div>
         <nav className="navigation-links">
-          <Link href="/now" legacyBehavior>
-            <a className="nav-link">
-              <span>What am I doing now</span>
-              <FontAwesomeIcon icon={faLongArrowAltRight} />
-            </a>
-          </Link>
+         
           <div className="social-links">
             <Link href="https://www.linkedin.com/in/berkcapar/" legacyBehavior>
               <a className="nav-link social-link">
