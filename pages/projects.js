@@ -6,7 +6,32 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "YaraPlus GrassN",
+      title: "StuntAI",
+      year: "2025",
+      category: "founder",
+      isFounder: true,
+      description: "AI-powered marketing automation platform transforming how businesses attract customers and accelerate growth. Founded and led the company through a strategic pivot from B2C (300 users) to B2B SaaS (10+ enterprise clients), building an agile team and achieving product-market fit before a successful exit.",
+      link: "https://www.stuntai.co",
+      tags: ["Founder & Exit", "AI/ML", "B2B SaaS", "Marketing Automation"]
+    },
+    {
+      title: "YaraPlus",
+      year: "2024",
+      category: "product",
+      description: "Yara's all-in-one digital platform unifying agronomic tools, services, and expert knowledge — helping farmers optimize fertilization decisions throughout the season. Led the product launch as PM, owning the full lifecycle from discovery through execution.",
+      link: "https://de.yaraplus.com/",
+      tags: ["Product Launch", "Platform Strategy", "Agriculture Tech"]
+    },
+    {
+      title: "YaraPlus Tankmix Expansion",
+      year: "2024",
+      category: "product",
+      description: "Tankmix helps farmers verify the mixability of leaf fertilizers with hundreds of plant protection products. Led the international expansion from 2 to 12 countries as Product Manager, driving go-to-market strategy and regional rollouts.",
+      link: "https://de.yaraplus.com/tankmix/",
+      tags: ["Go-to-Market", "International Expansion", "Product Management"]
+    },
+    {
+      title: "Yara GrassN",
       year: "2024",
       category: "product",
       description: "Led the development and launch of a nutrition planning tool that helps farmers optimize their grassland nutrition and achieve higher yields.",
@@ -74,6 +99,12 @@ const Projects = () => {
             Product Management
           </button>
           <button 
+            className={`filter-btn ${activeFilter === 'founder' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('founder')}
+          >
+            Founder
+          </button>
+          <button 
             className={`filter-btn ${activeFilter === 'development' ? 'active' : ''}`}
             onClick={() => setActiveFilter('development')}
           >
@@ -85,7 +116,12 @@ const Projects = () => {
           {projects
             .filter(project => activeFilter === 'all' || project.category === activeFilter)
             .map((project, index) => (
-              <div key={index} className="project-card">
+              <div key={index} className={`project-card ${project.isFounder ? 'founder-card' : ''}`}>
+                {project.isFounder && (
+                  <div className="founder-badge">
+                    <span className="founder-icon">✦</span> Founded & Exited
+                  </div>
+                )}
                 <div className="project-header">
                   <h3>{project.title}</h3>
                   <span className="year">{project.year}</span>
@@ -93,7 +129,7 @@ const Projects = () => {
                 <p className="description">{project.description}</p>
                 <div className="tags">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="tag">{tag}</span>
+                    <span key={i} className={`tag ${project.isFounder && i === 0 ? 'tag-founder' : ''}`}>{tag}</span>
                   ))}
                 </div>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
@@ -159,6 +195,38 @@ const Projects = () => {
         .project-card:hover {
           transform: translateY(-5px);
           border-color: lightsalmon;
+        }
+
+        .founder-card {
+          border: 1px solid rgba(255, 160, 122, 0.25);
+          background: linear-gradient(135deg, rgba(255, 160, 122, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%);
+          position: relative;
+        }
+
+        .founder-card:hover {
+          border-color: lightsalmon;
+          box-shadow: 0 8px 32px rgba(255, 160, 122, 0.12);
+        }
+
+        .founder-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          font-size: 0.75rem;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: lightsalmon;
+          margin-bottom: 0.75rem;
+        }
+
+        .founder-icon {
+          font-size: 0.65rem;
+        }
+
+        .tag-founder {
+          background: rgba(255, 160, 122, 0.2);
+          font-weight: 500;
         }
 
         .project-header {

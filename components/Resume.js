@@ -27,9 +27,43 @@ const Resume = () => {
 
         {activeTab === 'experience' && (
           <div className="experience-section">
+            <div className="experience-item current-role">
+              <div className="current-badge">Currently here</div>
+              <h2>Senior Product Manager @ Pactum AI</h2>
+              <p className="date">September 2025 - Present</p>
+              <p className="company-desc">
+                Pactum AI is the leader in agentic AI for enterprise procurement, enabling autonomous supplier negotiations at scale for Fortune 500 companies including Walmart, Otto, Rolls-Royce, Suez, and Veritiv.
+              </p>
+              <div className="current-focus">
+                Transforming how Fortune 500s negotiate with suppliers by relaunching Pactum AI's highest-revenue AI agent into a scalable, self-serve platform that cuts time-to-value in half.
+              </div>
+            </div>
+
+            <div className="experience-item founder-item">
+              <h2>Head of Product & Co-Founder @ StuntAI</h2>
+              <p className="date">June 2023 - September 2025</p>
+              <p className="company-desc">
+                StuntAI delivers AI-powered marketing automation that transforms how businesses attract customers and accelerate growth. Successfully exited in 2025.
+              </p>
+              <div className="achievements">
+                <div className="solution">
+                  <h3>Product Strategy & Roadmap</h3>
+                  <p>• Led strategic pivot from B2C to B2B SaaS through data-driven market research and user interviews, successfully transitioning from 300 B2C users to 10+ enterprise B2B clients, achieving stronger product-market fit in marketing automation space.</p>
+                </div>
+                <div className="solution">
+                  <h3>Cross-Functional Leadership</h3>
+                  <p>• Founded and managed agile development team (1 Developer, 1 Designer), implementing scrum methodology and sprint planning for rapid product iteration and customer-driven development.</p>
+                </div>
+                <div className="solution">
+                  <h3>B2B SaaS Growth</h3>
+                  <p>• Developed subscription pricing strategy, customer acquisition funnels, and enterprise sales processes, building comprehensive MarTech solution targeting SMB and enterprise segments with improved unit economics.</p>
+                </div>
+              </div>
+            </div>
+
             <div className="experience-item">
               <h2>Product Manager @ Yara Digital Farming</h2>
-              <p className="date">September 2023 - Present</p>
+              <p className="date">September 2023 - April 2025</p>
               <p className="company-desc">
                 Yara is a global leader in sustainable agriculture, providing digital farming tools to enhance
                 food productivity and reduce environmental footprint.
@@ -63,7 +97,7 @@ const Resume = () => {
             </div>
 
             <div className="experience-item">
-              <h2>Product Manager @ Experteer</h2>
+              <h2>Senior Product Manager @ Experteer</h2>
               <p className="date">August 2021 - April 2022</p>
               <p className="company-desc">
                 Experteer is Europe's premium career and recruitment SaaS platform, serving over 6 million executives and professionals seeking their next career move.
@@ -229,6 +263,42 @@ const Resume = () => {
 
           .experience-item:hover {
             transform: translateY(-4px);
+          }
+
+          .current-role {
+            border: 1px solid rgba(255, 160, 122, 0.3);
+          }
+
+          .current-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: lightsalmon;
+            background: rgba(255, 160, 122, 0.1);
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+          }
+
+          .current-focus {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.95);
+            padding: 1.25rem;
+            border-left: 3px solid lightsalmon;
+            background: rgba(255, 160, 122, 0.04);
+            border-radius: 0 8px 8px 0;
+          }
+
+          .founder-item {
+            border: 1px solid rgba(255, 160, 122, 0.2);
+            background: linear-gradient(135deg, rgba(255, 160, 122, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%);
+          }
+
+          .founder-item:hover {
+            border-color: rgba(255, 160, 122, 0.4);
           }
 
           h2 {
