@@ -25,7 +25,11 @@ const postdescs = [
 const Blog = () => {
     return (
         <div className="blog-container">
-            <Layout />
+            <Layout
+                title="Blog"
+                description="Notes on product management: OKRs, defining success, and the parts of the job everyone performs and few examine."
+                path="/blog"
+            />
             <h1 className="blog-title">Blog Posts</h1>
             <div className="blog-list">
                 <PostDescArea postdescs={postdescs} />

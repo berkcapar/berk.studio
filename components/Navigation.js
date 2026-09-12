@@ -10,11 +10,8 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="nav-right">
-          <Link href="/resume" legacyBehavior>
-            <a>Resume</a>
-          </Link>
-          <Link href="/projects" legacyBehavior>
-            <a>Projects</a>
+          <Link href="/" legacyBehavior>
+            <a>Home</a>
           </Link>
           <Link href="/blog" legacyBehavior>
             <a>Blog</a>

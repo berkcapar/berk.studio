@@ -24,7 +24,11 @@ export async function getStaticProps() {
 
   const what_to_expect = ({ content, data }) => ( 
     <div>
-      <Layout />
+      <Layout
+        title={data.title}
+        description={data.description}
+        path="/blog/defining-success-as-product-manager"
+      />
       <div className="blogcontent">
         {/* burada reactmarkdown'a pass eyledik */}
         <ReactMarkdown children={content} />
