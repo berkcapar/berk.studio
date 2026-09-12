@@ -18,7 +18,7 @@ const Projects = () => {
       title: "YaraPlus",
       year: "2024",
       category: "product",
-      description: "Yara's all-in-one digital platform unifying agronomic tools, services, and expert knowledge — helping farmers optimize fertilization decisions throughout the season. Led the product launch as PM, owning the full lifecycle from discovery through execution.",
+      description: "Yara's all-in-one digital platform unifying agronomic tools, services, and expert knowledge, helping farmers optimize fertilization decisions throughout the season. Led the product launch as PM, owning the full lifecycle from discovery through execution.",
       link: "https://de.yaraplus.com/",
       tags: ["Product Launch", "Platform Strategy", "Agriculture Tech"]
     },

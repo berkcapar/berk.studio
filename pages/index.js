@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Console from "../components/Console";
 
-const TITLE = "Berk Çapar — Senior AI Product Manager";
+const TITLE = "Berk Çapar · Senior AI Product Manager";
 const DESCRIPTION =
   "Product @ Pactum AI, based in Berlin. Ten years building B2B SaaS, AI agents, AdTech, MarTech and procurement products.";
 const URL = "https://berk.studio";

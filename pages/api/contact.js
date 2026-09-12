@@ -68,8 +68,8 @@ export default async function handler(req, res) {
         from,
         to: [TO],
         reply_to: email,
-        subject: `berk.studio — ${question.slice(0, 70)}`,
-        text: `${question}\n\n— ${email}\n`,
+        subject: `berk.studio: ${question.slice(0, 70)}`,
+        text: `${question}\n\nFrom: ${email}\n`,
       }),
     });
 

@@ -52,9 +52,9 @@ function ContactAnswer({ question }) {
     "mailto:" +
     EMAIL +
     "?subject=" +
-    encodeURIComponent("From berk.studio — " + question.slice(0, 70)) +
+    encodeURIComponent("From berk.studio: " + question.slice(0, 70)) +
     "&body=" +
-    encodeURIComponent(question + "\n\n— " + email + "\n");
+    encodeURIComponent(question + "\n\nFrom: " + email + "\n");
 
   async function submit(e) {
     e.preventDefault();
@@ -75,7 +75,7 @@ function ContactAnswer({ question }) {
   if (state === "sent") {
     return (
       <div className="a">
-        <p>Sent. I&rsquo;ll reply to <strong>{email}</strong> — usually within a day.</p>
+        <p>Sent. I&rsquo;ll reply to <strong>{email}</strong>, usually within a day.</p>
       </div>
     );
   }
@@ -83,7 +83,7 @@ function ContactAnswer({ question }) {
   if (state === "manual") {
     return (
       <div className="a">
-        <p>My inbox hook didn&rsquo;t answer just now, so let&rsquo;s do it the direct way — here&rsquo;s the message, ready to send.</p>
+        <p>My inbox hook didn&rsquo;t answer just now, so let&rsquo;s do it the direct way. Here&rsquo;s the message, ready to send.</p>
         <div className="draft">
           <b>to</b> {EMAIL}
           <br />
@@ -103,7 +103,7 @@ function ContactAnswer({ question }) {
 
   return (
     <div className="a">
-      <p>I haven&rsquo;t written an answer for that one yet — but I&rsquo;d like to. Leave your email and I&rsquo;ll reply properly.</p>
+      <p>I haven&rsquo;t written an answer for that one yet, but I&rsquo;d like to. Leave your email and I&rsquo;ll reply properly.</p>
       <div className="ask-back">
         <label htmlFor="reply-to">Reply to</label>
         <form className="mini" onSubmit={submit}>
@@ -178,7 +178,7 @@ export default function Console() {
   }, [activeId]);
 
   // Follow the conversation down after a turn is appended or an answer lands.
-  // Bumping a counter runs this after React has committed the new height —
+  // Bumping a counter runs this after React has committed the new height;
   // scrolling inline with the state update reads the old one.
   const [followTick, setFollowTick] = useState(0);
   useEffect(() => {
