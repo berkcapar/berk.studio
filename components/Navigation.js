@@ -5,17 +5,13 @@ const Navigation = () => {
     <div className="nav-container">
       <nav>
         <div className="nav-left">
-          <Link href="/" legacyBehavior>
-            <a className="name">Berk Capar</a>
+          <Link href="/" className="name">
+            Berk Çapar
           </Link>
         </div>
         <div className="nav-right">
-          <Link href="/" legacyBehavior>
-            <a>Home</a>
-          </Link>
-          <Link href="/blog" legacyBehavior>
-            <a>Blog</a>
-          </Link>
+          <Link href="/">Home</Link>
+          <Link href="/blog">Blog</Link>
         </div>
       </nav>
 

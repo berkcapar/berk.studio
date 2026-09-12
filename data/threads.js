@@ -359,7 +359,6 @@ export const THREADS = [
                 <li>Led product strategy and experimentation for AI/ML-backed AdTech products, connecting advertiser goals with contextual developer intent and campaign performance data.</li>
                 <li>Launched an AI/ML-backed course recommendation advertising product, reaching 150M+ impressions and doubling CTR within one month.</li>
                 <li>Owned a portfolio of 10+ AdTech products across native advertising, targeting, delivery, reporting, campaign setup and performance optimization.</li>
-                <li>Led implementation of an internal ad server platform, reducing third-party dependency costs by 40% while improving control over delivery, measurement, experimentation and future scalability.</li>
                 <li>Partnered with engineering, design, data, sales, ad operations and customer-facing teams to balance advertiser outcomes, developer experience, revenue growth and technical scalability.</li>
               </ul>
               <div class="tags"><span>Machine learning</span><span>AdTech</span><span>100M+ users</span></div>

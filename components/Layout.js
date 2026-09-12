@@ -16,11 +16,6 @@ const Layout = ({ children, title, description, path }) => {
   return (
     <div className="layout">
       <Head>
-        <script
-          src="https://kit.fontawesome.com/c0e82ecf0e.js"
-          crossOrigin="anonymous"
-        ></script>
-
         <title>{pageTitle}</title>
         <meta name="description" content={desc} />
         <meta
