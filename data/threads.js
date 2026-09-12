@@ -24,8 +24,8 @@ export const THREADS = [
         q: "Who am I talking to?",
         a: `
         <p class="lede">Product @ <a href="https://pactum.com/" target="_blank" rel="noopener noreferrer">pactum ai</a>, based in berlin. relentlessly curious.</p>
-        <p>In product management for about ten years, across AdTech, MarTech, AI agents, procurement and B2B SaaS.</p>
-        <p>The last year I've spent a lot of time building and babysitting AI agents. Having a lot of fun.</p>
+        <p>I'm in product management, about ten years now, across AI / ML, agents, AdTech, MarTech, procurement and B2B SaaS.</p>
+        <p>Recently I've spent a lot of time building and babysitting AI agents. Having a lot of fun.</p>
         <p>I've also been building mobile apps on the side, and trying to figure out distribution.</p>
         <p>Besides work, you can find me talking about economics, music, football and sometimes politics.</p>
         <p>If you'd like to get in touch about a project, a collab, an opportunity or anything at all, email me at <a href="mailto:${EMAIL}">${EMAIL}</a>. Or send your message to the chat below and I'll reply real quick.</p>`,
