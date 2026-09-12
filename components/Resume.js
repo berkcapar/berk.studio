@@ -5,7 +5,11 @@ const Resume = () => {
   const [activeTab, setActiveTab] = useState('experience');
 
   return (
-    <Layout>
+    <Layout
+      title="Resume"
+      description="Ten years of product roles: Pactum AI, StuntAI, Yara International, Stack Overflow, Experteer, Bond Digital and Onedio."
+      path="/resume"
+    >
       <div className="resume-container">
       <h1 className='more-about-me'>More about me</h1>
 

@@ -178,7 +178,6 @@ export default function Console() {
 
   const scrollRef = useRef(null);
   const thread = VISIBLE.find((t) => t.id === activeId);
-  const turns = [...thread.turns, ...(extras[activeId] || [])];
 
   const toBottom = useCallback(() => {
     const el = scrollRef.current;
@@ -348,12 +347,28 @@ export default function Console() {
             </div>
           </header>
 
+          {/* Every thread is rendered and the inactive ones are hidden,
+              rather than swapping one in. Rendering only the open thread put
+              just the intro in the server HTML and left the CV, the projects
+              and the writing reachable by script alone, which is the bulk of
+              what anyone would search for. */}
           <div className="scroll" ref={scrollRef}>
-            <div className="transcript" aria-live="polite">
-              {turns.map((t, i) => (
-                <Turn key={activeId + "-" + i} turn={t} />
-              ))}
-            </div>
+            {VISIBLE.map((t) => {
+              const open = t.id === activeId;
+              const all = [...t.turns, ...(extras[t.id] || [])];
+              return (
+                <div
+                  key={t.id}
+                  className="transcript"
+                  hidden={!open}
+                  aria-live={open ? "polite" : undefined}
+                >
+                  {all.map((turn, i) => (
+                    <Turn key={t.id + "-" + i} turn={turn} />
+                  ))}
+                </div>
+              );
+            })}
           </div>
 
           <div className="composer">

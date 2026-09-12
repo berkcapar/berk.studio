@@ -264,6 +264,10 @@ html { color-scheme: dark; }
    message off screen. The turn's own `rise` animation covers the jump. */
 .scroll { flex: 1; overflow-y: auto; min-height: 0; }
 
+/* .transcript is a flex container, which outranks the hidden attribute's
+   default styling, so state it explicitly. */
+.transcript[hidden] { display: none; }
+
 .transcript {
   max-width: var(--col);
   margin: 0 auto;

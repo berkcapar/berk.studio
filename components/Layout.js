@@ -2,7 +2,17 @@ import Navigation from './Navigation';
 import Head from "next/head";
 
 
-const Layout = ({ children }) => {
+const SITE = "https://berk.studio";
+
+const Layout = ({ children, title, description, path }) => {
+  // Every page used to ship the same bare "Berk Çapar" title and no
+  // description, so search results had nothing to tell them apart.
+  const pageTitle = title ? `${title} · Berk Çapar` : "Berk Çapar · Senior AI Product Manager";
+  const desc =
+    description ||
+    "Product @ Pactum AI, based in Berlin. Ten years building B2B SaaS, AI agents, AdTech, MarTech and procurement products.";
+  const url = path ? `${SITE}${path}` : SITE;
+
   return (
     <div className="layout">
       <Head>
@@ -10,12 +20,27 @@ const Layout = ({ children }) => {
           src="https://kit.fontawesome.com/c0e82ecf0e.js"
           crossOrigin="anonymous"
         ></script>
-        
-        <title>Berk Çapar</title>
+
+        <title>{pageTitle}</title>
+        <meta name="description" content={desc} />
         <meta
           name="viewport"
           content="initial-scale=1.0, width= device-width"
         />
+        <link rel="canonical" href={url} />
+
+        <meta property="og:type" content={path && path.startsWith("/blog/") ? "article" : "website"} />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content={`${SITE}/berk.jpg`} />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@bcaparing" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={desc} />
+        <meta name="twitter:image" content={`${SITE}/berk.jpg`} />
+
         <meta
           name="google-site-verification"
           content="p506aFByQlIFfJp7oSiaTgiPHk9Drj9MMj2I906eg9E"

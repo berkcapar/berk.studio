@@ -24,7 +24,11 @@ export async function getStaticProps() {
 
   const when_to_embrace = ({ content, data }) => ( 
     <div>
-      <Layout />
+      <Layout
+        title={data.title}
+        description={data.description}
+        path="/blog/okrs-when-to-embrace-when-to-avoid"
+      />
       <div className="blogcontent">
         {/* burada reactmarkdown'a pass eyledik */}
         <ReactMarkdown children={content} />

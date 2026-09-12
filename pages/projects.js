@@ -81,7 +81,11 @@ const Projects = () => {
   ];
 
   return (
-    <Layout>
+    <Layout
+      title="Projects"
+      description="Products Berk Çapar has shipped: AI agents at Pactum, digital farming at Yara, ML advertising at Stack Overflow, and a founded-and-exited SaaS."
+      path="/projects"
+    >
       <div className="projects-container">
         <h1 className="title">Projects</h1>
         
