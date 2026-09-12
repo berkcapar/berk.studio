@@ -12,9 +12,13 @@ export const EMAIL = "berkcapar@gmail.com";
 export const THREADS = [
   {
     id: "welcome",
+    path: "/",
     name: "Start here",
     note: "",
     title: "Start here",
+    seoTitle: "Berk Çapar · Senior AI Product Manager",
+    seoDescription:
+      "Product @ Pactum AI, based in Berlin. Ten years building B2B SaaS, AI agents, AdTech, MarTech and procurement products.",
     turns: [
       {
         q: "Who am I talking to?",
@@ -70,9 +74,13 @@ export const THREADS = [
 
   {
     id: "about",
+    path: "/about",
     name: "About",
     note: "01",
     title: "About",
+    seoTitle: "About · Berk Çapar",
+    seoDescription:
+      "Ten years of product work across AdTech, mobile at carrier scale, developer platforms, agriculture and enterprise agentic AI.",
     // Hidden for now: the Start here thread already covers the intro.
     // Flip this to show it in the rail again; the content is kept below.
     hidden: true,
@@ -125,9 +133,13 @@ export const THREADS = [
 
   {
     id: "shipped",
+    path: "/shipped",
     name: "Shipped",
     note: "07",
     title: "Shipped",
+    seoTitle: "Shipped · Berk Çapar",
+    seoDescription:
+      "Products Berk Çapar has shipped: AI negotiation agents at Pactum, digital farming at Yara, ML advertising at Stack Overflow, and a founded-and-exited SaaS.",
     turns: [
       {
         q: "What have you shipped recently?",
@@ -250,32 +262,18 @@ export const THREADS = [
 
   {
     id: "blog",
+    path: "/blog",
     name: "Blog",
     note: "03",
     title: "Blog",
+    seoTitle: "Blog · Berk Çapar",
+    seoDescription:
+      "Notes on product management: OKRs, defining success, and the parts of the job everyone performs and few examine.",
     turns: [
       {
         q: "Do you write?",
-        a: `
-        <p class="lede">Occasionally, mostly about the parts of product management everyone performs and few examine.</p>
-        <div class="posts">
-          <a class="post" href="/blog/okrs-when-to-embrace-when-to-avoid">
-            <span class="pt">OKRs: when to embrace, when to avoid</span>
-            <p class="pd">Why product managers love OKRs, and whether the shiny framework actually serves what your team is trying to do.</p>
-            <div class="pm">19 Jun 2023</div>
-          </a>
-          <a class="post" href="/blog/defining-success-as-product-manager">
-            <span class="pt">Defining success as a product manager</span>
-            <p class="pd">A guideline for the most famous PM task, and the one most often done by copying whatever the last company did.</p>
-            <div class="pm">09 May 2022</div>
-          </a>
-          <a class="post" href="/blog/what-to-expect">
-            <span class="pt">What to expect</span>
-            <p class="pd">What to expect from this blog, plus one artwork for you.</p>
-            <div class="pm">01 May 2022</div>
-          </a>
-        </div>
-        `,
+        a: `<p class="lede">Occasionally, mostly about the parts of product management everyone performs and few examine.</p>`,
+        posts: true,
       },
     ],
     chips: [
@@ -294,9 +292,13 @@ export const THREADS = [
 
   {
     id: "cv",
+    path: "/cv",
     name: "CV",
     note: "10y",
     title: "CV",
+    seoTitle: "CV · Berk Çapar",
+    seoDescription:
+      "Product roles since 2016: Pactum AI, StuntAI, Yara International, Stack Overflow, Experteer, Bond Digital and Onedio.",
     turns: [
       {
         q: "Walk me through your experience.",

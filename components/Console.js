@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 import { THREADS, EMAIL } from "../data/threads";
 
 const THINK_MS = 620;
@@ -139,7 +141,26 @@ function ContactAnswer({ question }) {
   );
 }
 
-function Turn({ turn }) {
+function PostList({ posts, current }) {
+  return (
+    <div className="posts">
+      {posts.map((p) => (
+        <Link
+          key={p.slug}
+          className="post"
+          href={`/blog/${p.slug}`}
+          aria-current={p.slug === current}
+        >
+          <span className="pt">{p.title}</span>
+          <p className="pd">{p.description}</p>
+          <div className="pm">{p.date}</div>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+function Turn({ turn, posts, currentPost }) {
   return (
     <div className="turn">
       <div className="msg">
@@ -160,6 +181,15 @@ function Turn({ turn }) {
           </div>
         ) : turn.contact ? (
           <ContactAnswer question={turn.q} />
+        ) : turn.md ? (
+          <div className="a md">
+            <ReactMarkdown>{turn.md}</ReactMarkdown>
+          </div>
+        ) : turn.posts ? (
+          <div className="a">
+            <div dangerouslySetInnerHTML={{ __html: turn.a }} />
+            <PostList posts={posts || []} current={currentPost} />
+          </div>
         ) : (
           <Answer html={turn.a} />
         )}
@@ -168,8 +198,8 @@ function Turn({ turn }) {
   );
 }
 
-export default function Console() {
-  const [activeId, setActiveId] = useState(VISIBLE[0].id);
+export default function Console({ thread: threadId, appended, posts }) {
+  const activeId = threadId || VISIBLE[0].id;
   const [extras, setExtras] = useState({}); // threadId -> appended turns
   const [used, setUsed] = useState({}); // threadId -> [chip questions already asked]
   const [busy, setBusy] = useState(false);
@@ -177,17 +207,22 @@ export default function Console() {
   const [draft, setDraft] = useState("");
 
   const scrollRef = useRef(null);
-  const thread = VISIBLE.find((t) => t.id === activeId);
+  const thread = VISIBLE.find((t) => t.id === activeId) || VISIBLE[0];
 
   const toBottom = useCallback(() => {
     const el = scrollRef.current;
     if (el) el.scrollTop = el.scrollHeight;
   }, []);
 
+  // Landing on a post URL should land on the post, not on the list above it.
   useEffect(() => {
+    if (!appended || !appended.length) return;
     const el = scrollRef.current;
-    if (el) el.scrollTop = 0;
-  }, [activeId]);
+    if (!el) return;
+    const turns = el.querySelectorAll(".transcript:not([hidden]) .turn");
+    const target = turns[turns.length - 1];
+    if (target) el.scrollTop = target.offsetTop - 24;
+  }, [appended]);
 
   // Follow the conversation down after a turn is appended or an answer lands.
   // Bumping a counter runs this after React has committed the new height;
@@ -250,11 +285,6 @@ export default function Console() {
     setDraft("");
   }
 
-  function openThread(id) {
-    setActiveId(id);
-    setNavOpen(false);
-  }
-
   return (
     <div className="desk">
       <div className="shell">
@@ -275,16 +305,16 @@ export default function Console() {
           <div className="rail-label">Threads</div>
           <nav className="threads">
             {VISIBLE.map((t) => (
-              <button
+              <Link
                 key={t.id}
-                type="button"
+                href={t.path}
                 className="thread"
                 aria-current={t.id === activeId}
-                onClick={() => openThread(t.id)}
+                onClick={() => setNavOpen(false)}
               >
                 <span className="t-name">{t.name}</span>
                 {t.note ? <span className="t-note">{t.note}</span> : null}
-              </button>
+              </Link>
             ))}
           </nav>
 
@@ -355,7 +385,11 @@ export default function Console() {
           <div className="scroll" ref={scrollRef}>
             {VISIBLE.map((t) => {
               const open = t.id === activeId;
-              const all = [...t.turns, ...(extras[t.id] || [])];
+              const all = [
+                ...t.turns,
+                ...(open && appended ? appended : []),
+                ...(extras[t.id] || []),
+              ];
               return (
                 <div
                   key={t.id}
@@ -364,7 +398,12 @@ export default function Console() {
                   aria-live={open ? "polite" : undefined}
                 >
                   {all.map((turn, i) => (
-                    <Turn key={t.id + "-" + i} turn={turn} />
+                    <Turn
+                      key={t.id + "-" + i}
+                      turn={turn}
+                      posts={posts}
+                      currentPost={appended && appended[0] && appended[0].slug}
+                    />
                   ))}
                 </div>
               );

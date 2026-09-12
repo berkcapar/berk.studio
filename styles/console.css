@@ -177,6 +177,7 @@ html { color-scheme: dark; }
   cursor: pointer;
   transition: background .15s ease, color .15s ease;
 }
+.thread { text-decoration: none; }
 .thread:hover { background: var(--surface); color: var(--text); }
 .thread .t-name { font-weight: 500; }
 .thread .t-note {
@@ -656,3 +657,60 @@ html { color-scheme: dark; }
 }
 @media (min-width: 881px) { .scrim { display: none; } }
 @media (prefers-reduced-motion: reduce) { .rail { transition: none; } }
+
+/* ---------- a blog post, rendered inside an answer ---------- */
+.a.md > * + * { margin-top: 1.3em; }
+.a.md h1, .a.md h2, .a.md h3 {
+  font-family: var(--sans);
+  color: var(--text);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  margin-top: 1.8em;
+}
+.a.md h1 { font-size: 1.5rem; margin-top: 0; }
+.a.md h2 { font-size: 1.2rem; }
+.a.md h3 { font-size: 1.05rem; }
+.a.md p { line-height: 1.75; }
+.a.md ul, .a.md ol { padding-left: 1.2em; display: flex; flex-direction: column; gap: 0.5em; }
+.a.md ul { list-style: none; padding-left: 0; }
+.a.md ul li { position: relative; padding-left: 1.15em; }
+.a.md ul li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.78em;
+  width: 6px; height: 1px;
+  background: var(--accent);
+}
+.a.md ol li { margin-left: 0.2em; }
+.a.md img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+.a.md blockquote {
+  border-left: 2px solid var(--accent-line);
+  padding-left: 16px;
+  color: var(--text-dim);
+}
+.a.md blockquote p { margin: 0; }
+.a.md code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.a.md pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+.a.md pre code { background: none; border: 0; padding: 0; }
+.a.md hr { border: 0; border-top: 1px solid var(--line-soft); }
+
+.a .post[aria-current="true"] .pt { color: var(--accent); }
+.a .post[aria-current="true"] { border-left: 2px solid var(--accent); padding-left: 13px; }
