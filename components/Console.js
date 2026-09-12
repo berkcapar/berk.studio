@@ -464,7 +464,7 @@ export default function Console({ thread: threadId, appended, posts }) {
                 <input
                   id="ask"
                   autoComplete="off"
-                  placeholder="Ask about agentic negotiations, the Yara portfolio, the exit…"
+                  placeholder="Write your message. It emails me, and I usually reply within a day."
                   value={draft}
                   onChange={(e) => setDraft(e.target.value)}
                 />
