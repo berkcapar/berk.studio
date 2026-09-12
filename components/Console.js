@@ -265,7 +265,7 @@ export default function Console() {
               onClick={() => openThread(t.id)}
             >
               <span className="t-name">{t.name}</span>
-              <span className="t-note">{t.note}</span>
+              {t.note ? <span className="t-note">{t.note}</span> : null}
             </button>
           ))}
         </nav>
@@ -317,7 +317,6 @@ export default function Console() {
           </button>
           <h1>{thread.title}</h1>
           <div className="ctx">
-            <span className="dot" aria-hidden="true" />
             <span>Pactum AI</span>
             <span className="sep" aria-hidden="true">
               &middot;

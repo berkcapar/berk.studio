@@ -13,7 +13,7 @@ export const THREADS = [
   {
     id: "welcome",
     name: "Start here",
-    note: "new",
+    note: "",
     title: "Start here",
     turns: [
       {
@@ -34,7 +34,6 @@ export const THREADS = [
             <h3>Where the product work lives</h3>
             <ul>
               <li><strong>Agent decisioning.</strong> Offer strategy, counteroffers, acceptance thresholds, supplier-specific constraints and savings models. That's the actual surface I define.</li>
-              <li><strong>From decision trees to agents.</strong> I led the transformation of a single deterministic decision-tree flow into an LLM-orchestrated agentic environment with guardrails, which raised negotiation success rate by <strong>25%</strong> in recent experiments.</li>
               <li><strong>Configurable, not bespoke.</strong> I translate customer-specific workflows into reusable platform capabilities across engagement, orchestration, configuration, analytics and reporting, so the next customer doesn't need a services project.</li>
             </ul>
             <p>The bet: make it self-serve. Every week of onboarding we remove is a week of value the customer gets back.</p>`,
@@ -59,7 +58,6 @@ export const THREADS = [
         q: "Show me the numbers.",
         a: `<p>Fair. Here's what the work moved:</p>
             <div class="metrics">
-              <div><span class="n">+25%</span><span class="k">negotiation success rate</span></div>
               <div><span class="n">700%</span><span class="k">user growth, 2&rarr;12 countries</span></div>
               <div><span class="n">150M+</span><span class="k">impressions, Stack Overflow</span></div>
               <div><span class="n">&minus;40%</span><span class="k">third-party ad-server cost</span></div>
@@ -133,15 +131,9 @@ export const THREADS = [
     title: "Shipped",
     turns: [
       {
-        q: "What have you actually shipped?",
+        q: "What have you shipped recently?",
         a: `
-        <p class="lede">Eight things that reached real users, newest first.</p>
-        <div class="metrics">
-          <div><span class="n">+25%</span><span class="k">negotiation success</span></div>
-          <div><span class="n">700%</span><span class="k">user growth, Tankmix</span></div>
-          <div><span class="n">150M+</span><span class="k">impressions, course recs</span></div>
-          <div><span class="n">15M</span><span class="k">devices reached</span></div>
-        </div>
+        <p class="lede">My teams ship something new almost every week. Here are 8 of them I'm really proud of.</p>
         <div class="entries">
           <div class="entry">
             <div class="when">2025&ndash;<br>now</div>
@@ -296,7 +288,7 @@ export const THREADS = [
             <div class="pm">01 May 2022</div>
           </a>
         </div>
-        <p><em>More in the drafts folder than on the page. An honest state of affairs for most PMs.</em></p>`,
+        `,
       },
     ],
     chips: [
@@ -331,7 +323,6 @@ export const THREADS = [
               <p class="blurb">Pactum is a B2B SaaS company helping Fortune 500 procurement teams scale their impact with AI agents that identify commercial opportunities and autonomously negotiate supplier terms.</p>
               <ul>
                 <li>Own end-to-end product strategy and hands-on execution for the Supplier Engagement Product, Pactum's highest-ARR product, enabling enterprise procurement teams to configure, launch and scale autonomous AI-agent negotiations.</li>
-                <li>Led the transformation of a single deterministic decision-tree flow into an LLM-orchestrated agentic environment with guardrails, increasing negotiation success rate by 25% in recent experiments.</li>
                 <li>Work directly with enterprise procurement teams to translate customer-specific workflows into reusable platform capabilities across supplier engagement, orchestration, configuration, analytics and reporting.</li>
                 <li>Define agent decisioning across offer strategy, counteroffers, acceptance thresholds, supplier-specific constraints and savings models.</li>
                 <li>Drive discovery, prototyping, roadmap decisions and delivery with an Engineering Lead, Solution Lead, 6 engineers, 1 designer and 1 data engineer; partner with operations, CS and sales to improve conversion and time-to-value.</li>
