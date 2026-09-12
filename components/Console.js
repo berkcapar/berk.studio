@@ -15,7 +15,11 @@ const Icons = {
   ),
   send: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M5 12h13M12 5.5 18.5 12 12 18.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M5 12h13M12 5.5 18.5 12 12 18.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   ),
   linkedin: (
@@ -75,7 +79,10 @@ function ContactAnswer({ question }) {
   if (state === "sent") {
     return (
       <div className="a">
-        <p>Sent. I&rsquo;ll reply to <strong>{email}</strong>, usually within a day.</p>
+        <p>
+          Sent. I&rsquo;ll reply to <strong>{email}</strong>, usually within a
+          day.
+        </p>
       </div>
     );
   }
@@ -83,7 +90,10 @@ function ContactAnswer({ question }) {
   if (state === "manual") {
     return (
       <div className="a">
-        <p>My inbox hook didn&rsquo;t answer just now, so let&rsquo;s do it the direct way. Here&rsquo;s the message, ready to send.</p>
+        <p>
+          My inbox hook didn&rsquo;t answer just now, so let&rsquo;s do it the
+          direct way. Here&rsquo;s the message, ready to send.
+        </p>
         <div className="draft">
           <b>to</b> {EMAIL}
           <br />
@@ -103,7 +113,10 @@ function ContactAnswer({ question }) {
 
   return (
     <div className="a">
-      <p>I haven&rsquo;t written an answer for that one yet, but I&rsquo;d like to. Leave your email and I&rsquo;ll reply properly.</p>
+      <p>
+        I haven&rsquo;t written an answer for that one yet, but I&rsquo;d like
+        to. Leave your email and I&rsquo;ll reply properly.
+      </p>
       <div className="ask-back">
         <label htmlFor="reply-to">Reply to</label>
         <form className="mini" onSubmit={submit}>
@@ -218,7 +231,7 @@ export default function Console() {
         window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       window.setTimeout(settle, reduce ? 0 : THINK_MS);
     },
-    [activeId, busy, follow]
+    [activeId, busy, follow],
   );
 
   function onChip(chip) {
@@ -244,128 +257,139 @@ export default function Console() {
   }
 
   return (
-    <div className="shell">
-      <aside className="rail" aria-label="Conversations">
-        <div className="rail-head">
-          <div className="mark" role="img" aria-label="Berk Çapar" />
-          <div className="who">
-            <span className="nm">Berk Çapar</span>
-            <span className="rl">Senior AI Product Manager</span>
+    <div className="desk">
+      <div className="shell">
+        <aside className="rail" aria-label="Conversations">
+          <div className="lights" aria-hidden="true">
+            <i className="r" />
+            <i className="y" />
+            <i className="g" />
           </div>
-        </div>
-
-        <div className="rail-label">Threads</div>
-        <nav className="threads">
-          {VISIBLE.map((t) => (
-            <button
-              key={t.id}
-              type="button"
-              className="thread"
-              aria-current={t.id === activeId}
-              onClick={() => openThread(t.id)}
-            >
-              <span className="t-name">{t.name}</span>
-              {t.note ? <span className="t-note">{t.note}</span> : null}
-            </button>
-          ))}
-        </nav>
-
-        <div className="rail-foot">
-          <div className="links">
-            <a
-              href="https://www.linkedin.com/in/berkcapar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              {Icons.linkedin}
-            </a>
-            <a
-              href="https://github.com/berkcapar"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              {Icons.github}
-            </a>
-            <a
-              href="https://x.com/bcaparing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-            >
-              {Icons.x}
-            </a>
-          </div>
-          <div className="foot-note">Berlin, DE</div>
-        </div>
-      </aside>
-
-      {navOpen && (
-        <button className="scrim" aria-label="Close menu" onClick={() => setNavOpen(false)} />
-      )}
-
-      <div className="main">
-        <header className="topbar">
-          <button
-            className="menu-btn"
-            aria-label="Open conversations"
-            aria-expanded={navOpen}
-            onClick={() => setNavOpen((v) => !v)}
-          >
-            {Icons.menu}
-          </button>
-          <h1>{thread.title}</h1>
-          <div className="ctx">
-            <span>Pactum AI</span>
-            <span className="sep" aria-hidden="true">
-              &middot;
-            </span>
-            <span className="tz">Berlin &middot; UTC+1</span>
-          </div>
-        </header>
-
-        <div className="scroll" ref={scrollRef}>
-          <div className="transcript" aria-live="polite">
-            {turns.map((t, i) => (
-              <Turn key={activeId + "-" + i} turn={t} />
-            ))}
-          </div>
-        </div>
-
-        <div className="composer">
-          <div className="composer-inner">
-            <div className="chips">
-              {thread.chips.map((c) => {
-                const spent = (used[activeId] || []).includes(c.q);
-                return (
-                  <button
-                    key={c.q}
-                    type="button"
-                    className="chip"
-                    disabled={spent || busy}
-                    onClick={() => onChip(c)}
-                  >
-                    {c.q}
-                  </button>
-                );
-              })}
+          <div className="rail-head">
+            <div className="mark" role="img" aria-label="Berk Çapar" />
+            <div className="who">
+              <span className="nm">Berk Çapar</span>
+              <span className="rl">Senior AI Product Manager</span>
             </div>
-            <form className="box" onSubmit={onSubmit}>
-              <label htmlFor="ask" className="sr-only">
-                Ask a question
-              </label>
-              <input
-                id="ask"
-                autoComplete="off"
-                placeholder="Ask about agentic negotiations, the Yara portfolio, the exit…"
-                value={draft}
-                onChange={(e) => setDraft(e.target.value)}
-              />
-              <button className="send" type="submit" aria-label="Send">
-                {Icons.send}
+          </div>
+
+          <div className="rail-label">Threads</div>
+          <nav className="threads">
+            {VISIBLE.map((t) => (
+              <button
+                key={t.id}
+                type="button"
+                className="thread"
+                aria-current={t.id === activeId}
+                onClick={() => openThread(t.id)}
+              >
+                <span className="t-name">{t.name}</span>
+                {t.note ? <span className="t-note">{t.note}</span> : null}
               </button>
-            </form>
+            ))}
+          </nav>
+
+          <div className="rail-foot">
+            <div className="links">
+              <a
+                href="https://www.linkedin.com/in/berkcapar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                {Icons.linkedin}
+              </a>
+              <a
+                href="https://github.com/berkcapar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                {Icons.github}
+              </a>
+              <a
+                href="https://x.com/bcaparing"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                {Icons.x}
+              </a>
+            </div>
+            <div className="foot-note">Berlin, DE</div>
+          </div>
+        </aside>
+
+        {navOpen && (
+          <button
+            className="scrim"
+            aria-label="Close menu"
+            onClick={() => setNavOpen(false)}
+          />
+        )}
+
+        <div className="main">
+          <header className="topbar">
+            <button
+              className="menu-btn"
+              aria-label="Open conversations"
+              aria-expanded={navOpen}
+              onClick={() => setNavOpen((v) => !v)}
+            >
+              {Icons.menu}
+            </button>
+            <h1>{thread.title}</h1>
+            <div className="ctx">
+              <span>Pactum AI</span>
+              <span className="sep" aria-hidden="true">
+                &middot;
+              </span>
+              <span className="tz">Berlin &middot; UTC+1</span>
+            </div>
+          </header>
+
+          <div className="scroll" ref={scrollRef}>
+            <div className="transcript" aria-live="polite">
+              {turns.map((t, i) => (
+                <Turn key={activeId + "-" + i} turn={t} />
+              ))}
+            </div>
+          </div>
+
+          <div className="composer">
+            <div className="composer-inner">
+              <div className="chips">
+                {thread.chips.map((c) => {
+                  const spent = (used[activeId] || []).includes(c.q);
+                  return (
+                    <button
+                      key={c.q}
+                      type="button"
+                      className="chip"
+                      disabled={spent || busy}
+                      onClick={() => onChip(c)}
+                    >
+                      {c.q}
+                    </button>
+                  );
+                })}
+              </div>
+              <form className="box" onSubmit={onSubmit}>
+                <label htmlFor="ask" className="sr-only">
+                  Ask a question
+                </label>
+                <input
+                  id="ask"
+                  autoComplete="off"
+                  placeholder="Ask about agentic negotiations, the Yara portfolio, the exit…"
+                  value={draft}
+                  onChange={(e) => setDraft(e.target.value)}
+                />
+                <button className="send" type="submit" aria-label="Send">
+                  {Icons.send}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

@@ -51,12 +51,31 @@ html { color-scheme: dark; }
   border-radius: 3px;
 }
 
-/* ---------- shell ---------- */
+/* ---------- desktop + window ----------
+   The console is framed as an app window sitting on a desktop. The
+   wallpaper is drawn in CSS rather than shipped as an image: nothing to
+   download, sharp at any size, and it carries the accent hue. */
+.desk {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 40px;
+  background:
+    radial-gradient(120% 85% at 16% 4%, rgba(240, 139, 96, 0.30), transparent 56%),
+    radial-gradient(95% 70% at 86% 16%, rgba(126, 96, 214, 0.34), transparent 62%),
+    radial-gradient(130% 95% at 62% 104%, rgba(28, 104, 150, 0.40), transparent 64%),
+    radial-gradient(70% 50% at 4% 82%, rgba(196, 78, 122, 0.20), transparent 70%),
+    linear-gradient(168deg, #0A0C16 0%, #12162A 42%, #1C1422 78%, #0B0D15 100%);
+}
+
 .shell {
   display: grid;
   grid-template-columns: var(--rail-w) minmax(0, 1fr);
-  height: 100vh;
-  min-height: 620px;
+  width: 100%;
+  max-width: 1180px;
+  height: min(860px, calc(100dvh - 80px));
+  min-height: 520px;
+  border-radius: 12px;
   overflow: hidden;
   background: var(--bg);
   color: var(--text);
@@ -64,7 +83,30 @@ html { color-scheme: dark; }
   font-weight: 400;
   font-size: var(--fs-ui);
   -webkit-font-smoothing: antialiased;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    0 34px 90px -18px rgba(0, 0, 0, 0.75);
 }
+
+/* Decorative, not controls: they set the frame, they don't promise actions. */
+.lights {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 20px;
+  flex: none;
+}
+.lights i {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.25);
+}
+.lights .r { background: #FF5F57; }
+.lights .y { background: #FEBC2E; }
+.lights .g { background: #28C840; }
 
 /* ---------- rail ---------- */
 .rail {
@@ -76,7 +118,7 @@ html { color-scheme: dark; }
 }
 
 .rail-head {
-  padding: 22px 20px 18px;
+  padding: 4px 20px 18px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -572,7 +614,16 @@ html { color-scheme: dark; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 880px) {
-  .shell { grid-template-columns: minmax(0, 1fr); height: 100dvh; }
+  .desk { padding: 0; display: block; background: var(--bg); }
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+    height: 100dvh;
+    min-height: 0;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .lights { display: none; }
   .menu-btn { display: block; }
   .rail {
     position: fixed;
