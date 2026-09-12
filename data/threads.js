@@ -12,9 +12,9 @@ export const EMAIL = "berkcapar@gmail.com";
 export const THREADS = [
   {
     id: "welcome",
-    name: "Welcome",
+    name: "Start here",
     note: "new",
-    title: "Welcome",
+    title: "Start here",
     turns: [
       {
         q: "Who am I talking to?",
@@ -76,6 +76,9 @@ export const THREADS = [
     name: "About",
     note: "01",
     title: "About",
+    // Hidden for now — the Start here thread already covers the intro.
+    // Flip this to show it in the rail again; the content is kept below.
+    hidden: true,
     turns: [
       {
         q: "Tell me the longer version.",
@@ -146,9 +149,8 @@ export const THREADS = [
               <p class="role">Supplier Engagement Product <span class="at">&middot; Pactum AI</span></p>
               <p class="blurb">Pactum's highest-ARR product. Lets enterprise procurement teams configure, launch and scale autonomous AI-agent negotiations.</p>
               <ul>
-                <li>Led the transformation from a single deterministic decision-tree flow into an LLM-orchestrated agentic environment with guardrails — <strong>+25% negotiation success rate</strong> in recent experiments.</li>
-                <li>Defining agent decisioning across offer strategy, counteroffers, acceptance thresholds, supplier constraints and savings models.</li>
-                <li>Turning customer-specific workflows into reusable platform capabilities, so onboarding stops being a services project.</li>
+                <li>Define agent negotiation strategy — counteroffers, acceptance thresholds, supplier constraints, human-in-the-loop and savings models — used every day by teams at Walmart, Otto and Sandoz.</li>
+                <li>Led the transformation of enterprise-specific customer workflows into reusable agentic capabilities, scaled to <strong>28 customers</strong>.</li>
               </ul>
               <div class="tags"><span class="key">Current</span><span>Agentic AI</span><span>AI guardrails</span><span>Procurement</span></div>
             </div>

@@ -3,6 +3,9 @@ import { THREADS, EMAIL } from "../data/threads";
 
 const THINK_MS = 620;
 
+/** Threads marked `hidden` keep their content but stay out of the rail. */
+const VISIBLE = THREADS.filter((t) => !t.hidden);
+
 /** Icons kept inline so the page ships no icon library. */
 const Icons = {
   menu: (
@@ -153,7 +156,7 @@ function Turn({ turn }) {
 }
 
 export default function Console() {
-  const [activeId, setActiveId] = useState(THREADS[0].id);
+  const [activeId, setActiveId] = useState(VISIBLE[0].id);
   const [extras, setExtras] = useState({}); // threadId -> appended turns
   const [used, setUsed] = useState({}); // threadId -> [chip questions already asked]
   const [busy, setBusy] = useState(false);
@@ -161,7 +164,7 @@ export default function Console() {
   const [draft, setDraft] = useState("");
 
   const scrollRef = useRef(null);
-  const thread = THREADS.find((t) => t.id === activeId);
+  const thread = VISIBLE.find((t) => t.id === activeId);
   const turns = [...thread.turns, ...(extras[activeId] || [])];
 
   const toBottom = useCallback(() => {
@@ -253,7 +256,7 @@ export default function Console() {
 
         <div className="rail-label">Threads</div>
         <nav className="threads">
-          {THREADS.map((t) => (
+          {VISIBLE.map((t) => (
             <button
               key={t.id}
               type="button"
