@@ -60,7 +60,6 @@ export const THREADS = [
             <div class="metrics">
               <div><span class="n">700%</span><span class="k">user growth, 2&rarr;12 countries</span></div>
               <div><span class="n">150M+</span><span class="k">impressions, Stack Overflow</span></div>
-              <div><span class="n">&minus;40%</span><span class="k">third-party ad-server cost</span></div>
               <div><span class="n">15M</span><span class="k">devices reached</span></div>
               <div><span class="n">1</span><span class="k">company founded &amp; exited</span></div>
             </div>
@@ -127,18 +126,18 @@ export const THREADS = [
   {
     id: "shipped",
     name: "Shipped",
-    note: "08",
+    note: "07",
     title: "Shipped",
     turns: [
       {
         q: "What have you shipped recently?",
         a: `
-        <p class="lede">My teams ship something new almost every week. Here are 8 of them I'm really proud of.</p>
+        <p class="lede">My teams ship something new almost every week. Here are 7 of them I'm really proud of.</p>
         <div class="entries">
           <div class="entry">
             <div class="when">2025&ndash;<br>now</div>
             <div class="entry-body">
-              <p class="role">Supplier Engagement Product <span class="at">&middot; Pactum AI</span></p>
+              <p class="role">Supplier Engagement Platform <span class="at">&middot; Pactum AI</span></p>
               <p class="blurb">Pactum's highest-ARR product. Lets enterprise procurement teams configure, launch and scale autonomous AI-agent negotiations.</p>
               <ul>
                 <li>Define agent negotiation strategy: counteroffers, acceptance thresholds, supplier constraints, human-in-the-loop and savings models. Used every day by teams at Walmart, Otto and Sandoz.</li>
@@ -201,18 +200,6 @@ export const THREADS = [
               </ul>
               <div class="tags"><span class="key">150M+ impressions</span><span>Machine learning</span><span>Experimentation</span></div>
               <a class="out" href="https://stackoverflow.blog/2023/02/01/announcing-more-ways-to-learn-and-grow-your-skills/" target="_blank" rel="noopener noreferrer">Stack Overflow blog &#8599;</a>
-            </div>
-          </div>
-
-          <div class="entry">
-            <div class="when">2023</div>
-            <div class="entry-body">
-              <p class="role">Internal ad server <span class="at">&middot; Stack Overflow</span></p>
-              <p class="blurb">Replacing a third-party dependency with a platform we controlled.</p>
-              <ul>
-                <li>Cut <strong>third-party dependency costs by 40%</strong> while improving control over delivery, measurement, experimentation and future scalability.</li>
-              </ul>
-              <div class="tags"><span>Platform</span><span>AdTech</span><span>Build vs buy</span></div>
             </div>
           </div>
 
@@ -322,7 +309,7 @@ export const THREADS = [
               <p class="role">Senior Product Manager <span class="at">&middot; Pactum AI, Berlin</span></p>
               <p class="blurb">Pactum is a B2B SaaS company helping Fortune 500 procurement teams scale their impact with AI agents that identify commercial opportunities and autonomously negotiate supplier terms.</p>
               <ul>
-                <li>Own end-to-end product strategy and hands-on execution for the Supplier Engagement Product, Pactum's highest-ARR product, enabling enterprise procurement teams to configure, launch and scale autonomous AI-agent negotiations.</li>
+                <li>Own end-to-end product strategy and hands-on execution for the Supplier Engagement Platform, Pactum's highest-ARR product, enabling enterprise procurement teams to configure, launch and scale autonomous AI-agent negotiations.</li>
                 <li>Work directly with enterprise procurement teams to translate customer-specific workflows into reusable platform capabilities across supplier engagement, orchestration, configuration, analytics and reporting.</li>
                 <li>Define agent decisioning across offer strategy, counteroffers, acceptance thresholds, supplier-specific constraints and savings models.</li>
                 <li>Drive discovery, prototyping, roadmap decisions and delivery with an Engineering Lead, Solution Lead, 6 engineers, 1 designer and 1 data engineer; partner with operations, CS and sales to improve conversion and time-to-value.</li>
