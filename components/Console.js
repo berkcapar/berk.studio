@@ -52,7 +52,7 @@ function Answer({ html }) {
  */
 function ContactAnswer({ question }) {
   const [email, setEmail] = useState("");
-  const [state, setState] = useState("idle"); // idle | sending | sent | manual
+  const [state, setState] = useState("idle"); // idle | sending | sent | slowdown | manual
 
   const mailto =
     "mailto:" +
@@ -72,7 +72,11 @@ function ContactAnswer({ question }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, question }),
       });
-      setState(res.ok ? "sent" : "manual");
+      if (res.ok) return setState("sent");
+      // A second message inside a minute is throttled. Saying the inbox is
+      // down would be wrong, and would send someone away thinking their
+      // message was lost.
+      setState(res.status === 429 ? "slowdown" : "manual");
     } catch {
       setState("manual");
     }
@@ -85,6 +89,31 @@ function ContactAnswer({ question }) {
           Sent. I&rsquo;ll reply to <strong>{email}</strong>, usually within a
           day.
         </p>
+      </div>
+    );
+  }
+
+  if (state === "slowdown") {
+    return (
+      <div className="a">
+        <p>
+          That&rsquo;s one message a minute, which is the limit here. Give it a
+          moment and send it again &mdash; nothing was lost.
+        </p>
+        <div className="ask-back">
+          <label htmlFor="reply-to">Reply to</label>
+          <form className="mini" onSubmit={submit}>
+            <input
+              id="reply-to"
+              type="email"
+              required
+              autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button type="submit">Try again</button>
+          </form>
+        </div>
       </div>
     );
   }
