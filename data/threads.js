@@ -58,17 +58,6 @@ export const THREADS = [
               <li>I prototype myself. Rapid prototyping is faster than a spec at settling an argument.</li>
             </ul>`,
       },
-      {
-        q: "Show me the numbers.",
-        a: `<p>Fair. Here's what the work moved:</p>
-            <div class="metrics">
-              <div><span class="n">700%</span><span class="k">user growth, 2&rarr;12 countries</span></div>
-              <div><span class="n">150M+</span><span class="k">impressions, Stack Overflow</span></div>
-              <div><span class="n">15M</span><span class="k">devices reached</span></div>
-              <div><span class="n">1</span><span class="k">company founded &amp; exited</span></div>
-            </div>
-            <p>The <strong>Shipped</strong> and <strong>CV</strong> threads have the story behind each one.</p>`,
-      },
     ],
   },
 

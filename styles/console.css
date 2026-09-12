@@ -433,33 +433,6 @@ html { color-scheme: dark; }
 }
 .a .out:hover { text-decoration: underline; }
 
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
-  gap: 1px;
-  background: var(--line-soft);
-  border: 1px solid var(--line-soft);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.metrics > div { background: var(--bg); padding: 15px 16px; }
-.metrics .n {
-  display: block;
-  font-family: var(--mono);
-  font-size: 1.22rem;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
-}
-.metrics .k {
-  display: block;
-  margin-top: 5px;
-  font-size: var(--fs-meta);
-  line-height: 1.45;
-  color: var(--text-faint);
-}
-
 .skills { display: flex; flex-wrap: wrap; gap: 6px; }
 .skills span {
   font-family: var(--mono);
