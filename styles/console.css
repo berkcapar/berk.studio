@@ -135,8 +135,9 @@ html { color-scheme: dark; }
 }
 
 .rail-head .who { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-.rail-head .nm { font-weight: 600; font-size: 0.9375rem; letter-spacing: -0.01em; }
+.rail-head .nm { margin: 0; font-weight: 600; font-size: 0.9375rem; letter-spacing: -0.01em; }
 .rail-head .rl {
+  margin: 0;
   font-family: var(--mono);
   font-size: var(--fs-micro);
   color: var(--text-faint);
@@ -232,7 +233,7 @@ html { color-scheme: dark; }
   flex: none;
   border-bottom: 1px solid var(--line-soft);
 }
-.topbar h1 {
+.topbar h2 {
   margin: 0;
   font-family: var(--mono);
   font-size: var(--fs-ui);
@@ -264,10 +265,6 @@ html { color-scheme: dark; }
    silently does nothing when the frame loop is throttled, leaving the new
    message off screen. The turn's own `rise` animation covers the jump. */
 .scroll { flex: 1; overflow-y: auto; min-height: 0; }
-
-/* .transcript is a flex container, which outranks the hidden attribute's
-   default styling, so state it explicitly. */
-.transcript[hidden] { display: none; }
 
 .transcript {
   max-width: var(--col);
@@ -397,7 +394,14 @@ html { color-scheme: dark; }
   padding-top: 3px;
 }
 .entry-body { min-width: 0; }
-.a .role { font-size: 0.9375rem; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 3px; line-height: 1.4; }
+.a h3.role {
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 3px;
+  line-height: 1.4;
+}
 .at { color: var(--accent); font-weight: 400; }
 .a .blurb { margin: 0; font-size: var(--fs-meta); line-height: 1.6; color: var(--text-faint); }
 
@@ -687,3 +691,29 @@ html { color-scheme: dark; }
 
 .a .post[aria-current="true"] .pt { color: var(--accent); }
 .a .post[aria-current="true"] { border-left: 2px solid var(--accent); padding-left: 13px; }
+
+/* ---------- 404 ---------- */
+.notfound { display: grid; place-items: center; }
+.nf-body { max-width: 520px; padding: 32px; text-align: left; }
+.nf-code {
+  margin: 0 0 10px;
+  font-family: var(--mono);
+  font-size: var(--fs-meta);
+  letter-spacing: 0.14em;
+  color: var(--accent);
+}
+.nf-title { margin: 0 0 12px; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.02em; }
+.nf-text { margin: 0 0 22px; color: var(--text-dim); line-height: 1.7; font-size: var(--fs-body); }
+.nf-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.nf-links a {
+  font-family: var(--mono);
+  font-size: var(--fs-meta);
+  color: var(--text-dim);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 7px 14px;
+  text-decoration: none;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.nf-links a:hover { color: var(--accent); border-color: var(--accent-line); background: var(--accent-wash); }

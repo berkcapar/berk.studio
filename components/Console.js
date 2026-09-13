@@ -41,6 +41,13 @@ const Icons = {
   ),
 };
 
+const MD_HEADINGS = {
+  h1: "h2",
+  h2: "h3",
+  h3: "h4",
+  h4: "h5",
+};
+
 function Answer({ html }) {
   return <div className="a" dangerouslySetInnerHTML={{ __html: html }} />;
 }
@@ -212,7 +219,10 @@ function Turn({ turn, posts, currentPost }) {
           <ContactAnswer question={turn.q} />
         ) : turn.md ? (
           <div className="a md">
-            <ReactMarkdown>{turn.md}</ReactMarkdown>
+            {/* The page heading is the person's name, so a post's own
+                markdown headings shift down one level rather than competing
+                with it. */}
+            <ReactMarkdown components={MD_HEADINGS}>{turn.md}</ReactMarkdown>
           </div>
         ) : turn.posts ? (
           <div className="a">
@@ -326,8 +336,8 @@ export default function Console({ thread: threadId, appended, posts }) {
           <div className="rail-head">
             <div className="mark" role="img" aria-label="Berk Çapar" />
             <div className="who">
-              <span className="nm">Berk Çapar</span>
-              <span className="rl">Senior AI Product Manager</span>
+              <h1 className="nm">Berk Çapar</h1>
+              <p className="rl">Senior AI Product Manager</p>
             </div>
           </div>
 
@@ -396,7 +406,7 @@ export default function Console({ thread: threadId, appended, posts }) {
             >
               {Icons.menu}
             </button>
-            <h1>{thread.title}</h1>
+            <h2>{thread.title}</h2>
             <div className="ctx">
               <span>Pactum AI</span>
               <span className="sep" aria-hidden="true">
@@ -406,37 +416,25 @@ export default function Console({ thread: threadId, appended, posts }) {
             </div>
           </header>
 
-          {/* Every thread is rendered and the inactive ones are hidden,
-              rather than swapping one in. Rendering only the open thread put
-              just the intro in the server HTML and left the CV, the projects
-              and the writing reachable by script alone, which is the bulk of
-              what anyone would search for. */}
+          {/* Only the open thread renders. Each thread has its own URL, so
+              every route already prerenders its own content; rendering all
+              four and hiding three made /, /shipped, /cv and /blog serve
+              near-identical bodies, which reads as duplicate content. */}
           <div className="scroll" ref={scrollRef}>
-            {VISIBLE.map((t) => {
-              const open = t.id === activeId;
-              const all = [
-                ...t.turns,
-                ...(open && appended ? appended : []),
-                ...(extras[t.id] || []),
-              ];
-              return (
-                <div
-                  key={t.id}
-                  className="transcript"
-                  hidden={!open}
-                  aria-live={open ? "polite" : undefined}
-                >
-                  {all.map((turn, i) => (
-                    <Turn
-                      key={t.id + "-" + i}
-                      turn={turn}
-                      posts={posts}
-                      currentPost={appended && appended[0] && appended[0].slug}
-                    />
-                  ))}
-                </div>
-              );
-            })}
+            <div className="transcript" aria-live="polite">
+              {[
+                ...thread.turns,
+                ...(appended || []),
+                ...(extras[activeId] || []),
+              ].map((turn, i) => (
+                <Turn
+                  key={activeId + "-" + i}
+                  turn={turn}
+                  posts={posts}
+                  currentPost={appended && appended[0] && appended[0].slug}
+                />
+              ))}
+            </div>
           </div>
 
           <div className="composer">

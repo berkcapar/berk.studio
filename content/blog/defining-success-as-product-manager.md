@@ -1,7 +1,7 @@
 ---
 slug: defining-success-as-product-manager 
 title: Defining Success as Product Manager
-description: selam.
+description: How to define what success means for a product, and why copying the last company's metrics is the most common way to get it wrong.
 date: '2022-05-09'
 ---
 

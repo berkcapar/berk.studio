@@ -1,6 +1,7 @@
 import Console from "../../components/Console";
-import Seo, { SITE } from "../../components/Seo";
+import Seo from "../../components/Seo";
 import { getPost, getPosts } from "../../lib/posts";
+import { SITE, PERSON, WEBSITE, graph, breadcrumb } from "../../lib/schema";
 
 /**
  * A post opens inside the console, as the next turn of the Blog thread:
@@ -19,14 +20,21 @@ export function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ post, posts }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
+  const url = `${SITE}/blog/${post.slug}`;
+  const posting = {
     "@type": "BlogPosting",
+    "@id": `${url}#post`,
+    mainEntityOfPage: url,
+    url,
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    url: `${SITE}/blog/${post.slug}`,
-    author: { "@type": "Person", name: "Berk Çapar", url: SITE },
+    dateModified: post.date,
+    inLanguage: "en",
+    image: `${SITE}/berk-og.png`,
+    author: { "@id": `${SITE}/#person` },
+    publisher: { "@id": `${SITE}/#person` },
+    isPartOf: { "@id": `${SITE}/blog#blog` },
   };
 
   return (
@@ -36,7 +44,17 @@ export default function BlogPost({ post, posts }) {
         description={post.description}
         path={`/blog/${post.slug}`}
         type="article"
-        jsonLd={jsonLd}
+        publishedTime={post.date}
+        jsonLd={graph(
+          PERSON,
+          WEBSITE,
+          posting,
+          breadcrumb([
+            { name: "Berk Çapar", path: "/" },
+            { name: "Blog", path: "/blog" },
+            { name: post.title, path: `/blog/${post.slug}` },
+          ])
+        )}
       />
       <Console
         thread="blog"

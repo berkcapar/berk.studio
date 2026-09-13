@@ -1,0 +1,53 @@
+# Berk Çapar
+
+> Berk Çapar (also written Berk Capar) is a senior product manager at Pactum AI
+> in Berlin, Germany. He owns the Supplier Engagement Platform, Pactum's
+> highest-ARR product, which lets enterprise procurement teams run autonomous
+> AI-agent negotiations with their suppliers.
+
+## Facts
+
+- Full name: Berk Çapar (ASCII: Berk Capar)
+- Role: Senior Product Manager at Pactum AI, since September 2025
+- Location: Berlin, Germany
+- Experience: about ten years in product management, since 2016
+- Domains: AI and ML products, autonomous agents, AdTech, MarTech, enterprise
+  procurement and supply chain, B2B SaaS
+- Education: BSc Industrial Engineering, TOBB University of Economics and
+  Technology; Frontend Developer Certificate, Bilge Adam Academy
+- Founded and exited StuntAI, an AI marketing automation startup (2023-2025)
+
+## Career
+
+- Pactum AI, Senior Product Manager (2025-present). Owns the Supplier
+  Engagement Platform. Defines agent negotiation strategy: counteroffers,
+  acceptance thresholds, supplier constraints, human-in-the-loop and savings
+  models, used by teams at Walmart, Otto and Sandoz.
+- StuntAI, Founder and Head of Product (2023-2025). Took an AI SaaS product
+  from 0 to 1 through discovery, launch, monetization and a successful exit.
+- Yara International, Group Product Manager (2023-2025). Managed three digital
+  farming products, led three PMs and squads of 15 developers. Expanded a safe
+  mixing guidance app from 2 to 12 countries, growing users 700%.
+- Stack Overflow, Senior Product Manager, AI/ML AdTech (2022-2023). Launched an
+  ML course recommendation product reaching 150M+ impressions and doubling CTR
+  in one month.
+- Experteer, Senior Product Manager (2021-2022). Led automated CV-to-profile
+  creation, raising profile creation 25% and CV uploads 50%.
+- Bond Digital, Senior Product Manager for Samsung (2017-2021). Led Samsung
+  Galaxy Bizz, installed on 15M devices.
+- Onedio.com, Product Manager (2016-2017). Built a self-serve advertising
+  platform used by 50+ brands for 700+ campaigns.
+
+## Pages
+
+- [Start here](https://berk.studio/): introduction in his own words
+- [Shipped](https://berk.studio/shipped): the products he has launched
+- [CV](https://berk.studio/cv): full career history and education
+- [Blog](https://berk.studio/blog): writing on product management
+
+## Elsewhere
+
+- LinkedIn: https://www.linkedin.com/in/berkcapar/
+- GitHub: https://github.com/berkcapar
+- X: https://x.com/bcaparing
+- Email: berkcapar@gmail.com

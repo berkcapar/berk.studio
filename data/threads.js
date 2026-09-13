@@ -138,7 +138,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2025&ndash;<br>now</div>
             <div class="entry-body">
-              <p class="role">Supplier Engagement Platform <span class="at">&middot; Pactum AI</span></p>
+              <h3 class="role">Supplier Engagement Platform <span class="at">&middot; Pactum AI</span></h3>
               <p class="blurb">Pactum's highest-ARR product. Lets enterprise procurement teams configure, launch and scale autonomous AI-agent negotiations.</p>
               <ul>
                 <li>Define agent negotiation strategy: counteroffers, acceptance thresholds, supplier constraints, human-in-the-loop and savings models. Used every day by teams at Walmart, Otto and Sandoz.</li>
@@ -151,7 +151,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2023&ndash;<br>2025</div>
             <div class="entry-body">
-              <p class="role">StuntAI <span class="at">&middot; founded &amp; exited</span></p>
+              <h3 class="role">StuntAI <span class="at">&middot; founded &amp; exited</span></h3>
               <p class="blurb">AI-powered marketing automation: strategy, content and campaign assets, generated faster.</p>
               <ul>
                 <li>Took an AI SaaS product 0-to-1 through discovery, prototyping, launch, customer validation and monetization, to a successful exit.</li>
@@ -159,14 +159,13 @@ export const THREADS = [
                 <li>Built onboarding, subscription pricing, acquisition funnels and B2B sales processes.</li>
               </ul>
               <div class="tags"><span class="key">Founder &amp; exit</span><span>0-to-1</span><span>B2B SaaS</span><span>MarTech</span></div>
-              <a class="out" href="https://www.stuntai.co" target="_blank" rel="noopener noreferrer">stuntai.co &#8599;</a>
             </div>
           </div>
 
           <div class="entry">
             <div class="when">2024</div>
             <div class="entry-body">
-              <p class="role">Safe mixing guidance <span class="at">&middot; Yara, 2 &rarr; 12 countries</span></p>
+              <h3 class="role">Safe mixing guidance <span class="at">&middot; Yara, 2 &rarr; 12 countries</span></h3>
               <p class="blurb">Lets farmers verify whether leaf fertilisers can be safely mixed with hundreds of plant-protection products.</p>
               <ul>
                 <li>Led the expansion from 2 to 12 countries: <strong>700% more users, 250% more active users</strong>.</li>
@@ -180,7 +179,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2024</div>
             <div class="entry-body">
-              <p class="role">Nutrition &amp; harvest optimisation <span class="at">&middot; YaraPlus</span></p>
+              <h3 class="role">Nutrition &amp; harvest optimisation <span class="at">&middot; YaraPlus</span></h3>
               <p class="blurb">Yara's all-in-one digital farming platform, bringing agronomic tools, services and expert knowledge into one place.</p>
               <ul>
                 <li>Built and scaled data-driven nutrition recommendation and harvest optimisation products, turning agronomic expertise into scalable digital workflows.</li>
@@ -194,7 +193,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2023</div>
             <div class="entry-body">
-              <p class="role">Course recommendations <span class="at">&middot; Stack Overflow</span></p>
+              <h3 class="role">Course recommendations <span class="at">&middot; Stack Overflow</span></h3>
               <p class="blurb">An AI/ML-backed advertising product matching courses to what a developer was actually reading about.</p>
               <ul>
                 <li><strong>150M+ impressions</strong>, and rapid experimentation doubled click-through within one month.</li>
@@ -207,7 +206,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2022</div>
             <div class="entry-body">
-              <p class="role">CV-to-Profile <span class="at">&middot; Experteer</span></p>
+              <h3 class="role">CV-to-Profile <span class="at">&middot; Experteer</span></h3>
               <p class="blurb">Turning unstructured CV uploads into structured candidate profiles, instantly.</p>
               <ul>
                 <li><strong>+25% profile creation, +50% CV upload rates.</strong></li>
@@ -221,7 +220,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2021</div>
             <div class="entry-body">
-              <p class="role">Samsung Galaxy Bizz <span class="at">&middot; 15M devices</span></p>
+              <h3 class="role">Samsung Galaxy Bizz <span class="at">&middot; 15M devices</span></h3>
               <p class="blurb">New-generation content app pre-installed across 15 million Samsung devices in Turkey.</p>
               <ul>
                 <li><strong>+30% logged-in users, +15% first-day retention, +45% ad revenue.</strong></li>
@@ -297,7 +296,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">09/2025&ndash;<br>current</div>
             <div class="entry-body">
-              <p class="role">Senior Product Manager <span class="at">&middot; Pactum AI, Berlin</span></p>
+              <h3 class="role">Senior Product Manager <span class="at">&middot; Pactum AI, Berlin</span></h3>
               <p class="blurb">Pactum is a B2B SaaS company helping Fortune 500 procurement teams scale their impact with AI agents that identify commercial opportunities and autonomously negotiate supplier terms.</p>
               <ul>
                 <li>Own end-to-end product strategy and hands-on execution for the Supplier Engagement Platform, Pactum's highest-ARR product, enabling enterprise procurement teams to configure, launch and scale autonomous AI-agent negotiations.</li>
@@ -313,7 +312,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">07/2023&ndash;<br>10/2025</div>
             <div class="entry-body">
-              <p class="role">Founder &amp; Head of Product <span class="at">&middot; StuntAI, Berlin</span></p>
+              <h3 class="role">Founder &amp; Head of Product <span class="at">&middot; StuntAI, Berlin</span></h3>
               <p class="blurb">StuntAI was an AI-powered marketing automation platform helping businesses generate strategy, content and campaign assets faster.</p>
               <ul>
                 <li>Founded and took an AI SaaS product from 0-to-1 through discovery, prototyping, launch, customer validation, monetization and successful exit.</li>
@@ -328,7 +327,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">09/2023&ndash;<br>05/2025</div>
             <div class="entry-body">
-              <p class="role">Group Product Manager <span class="at">&middot; Yara International, Berlin</span></p>
+              <h3 class="role">Group Product Manager <span class="at">&middot; Yara International, Berlin</span></h3>
               <p class="blurb">Yara is a global agriculture technology company building digital farming products that help farmers and commercial teams improve crop productivity, sustainability and decision-making.</p>
               <ul>
                 <li>Managed a product portfolio of 3 digital farming products within Yara's 8-product portfolio, functionally leading 3 PMs/product owners and cross-functional squads of 15 developers, 2 designers and 3 data analysts.</li>
@@ -344,7 +343,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">06/2022&ndash;<br>08/2023</div>
             <div class="entry-body">
-              <p class="role">Senior Product Manager, AI/ML AdTech <span class="at">&middot; Stack Overflow, Berlin</span></p>
+              <h3 class="role">Senior Product Manager, AI/ML AdTech <span class="at">&middot; Stack Overflow, Berlin</span></h3>
               <p class="blurb">Stack Overflow is one of the world's largest developer communities and knowledge platforms, serving 100M+ monthly users.</p>
               <ul>
                 <li>Led product strategy and experimentation for AI/ML-backed AdTech products, connecting advertiser goals with contextual developer intent and campaign performance data.</li>
@@ -359,7 +358,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">08/2021&ndash;<br>04/2022</div>
             <div class="entry-body">
-              <p class="role">Senior Product Manager <span class="at">&middot; Experteer, Munich</span></p>
+              <h3 class="role">Senior Product Manager <span class="at">&middot; Experteer, Munich</span></h3>
               <p class="blurb">Executive recruitment SaaS platform serving 6M+ professionals.</p>
               <ul>
                 <li>Led automated CV-to-profile creation, turning unstructured CV uploads into structured candidate profiles and increasing profile creation by 25% and CV upload rates by 50%.</li>
@@ -374,7 +373,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">09/2017&ndash;<br>08/2021</div>
             <div class="entry-body">
-              <p class="role">Senior Product Manager / PM for Samsung <span class="at">&middot; Bond Digital, Istanbul</span></p>
+              <h3 class="role">Senior Product Manager / PM for Samsung <span class="at">&middot; Bond Digital, Istanbul</span></h3>
               <p class="blurb">Bond Digital is a leading AdTech and Samsung mobile products partner, building advertising, pre-install and mobile engagement products reaching millions of users across Samsung devices and major digital publishers.</p>
               <ul>
                 <li>Led product strategy for Samsung Galaxy Bizz, an app installed on 15M Samsung devices, increasing logged-in users by 30%, first-day retention by 15% and ad revenue by 45%.</li>
@@ -389,7 +388,7 @@ export const THREADS = [
           <div class="entry">
             <div class="when">12/2016&ndash;<br>09/2017</div>
             <div class="entry-body">
-              <p class="role">Product Manager <span class="at">&middot; Onedio.com, Istanbul</span></p>
+              <h3 class="role">Product Manager <span class="at">&middot; Onedio.com, Istanbul</span></h3>
               <p class="blurb">Onedio is a leading digital media platform in T&uuml;rkiye, reaching millions of monthly users through viral content, social distribution and branded advertising products.</p>
               <ul>
                 <li>Built and launched a self-serve advertising platform, enabling 50+ brands to launch 700+ campaigns and creating a new scalable revenue stream.</li>
@@ -406,14 +405,14 @@ export const THREADS = [
           <div class="entry">
             <div class="when">Degree</div>
             <div class="entry-body">
-              <p class="role">BSc Industrial Engineering</p>
+              <h3 class="role">BSc Industrial Engineering</h3>
               <p class="blurb">TOBB University of Economics and Technology</p>
             </div>
           </div>
           <div class="entry">
             <div class="when">Cert.</div>
             <div class="entry-body">
-              <p class="role">Frontend Developer Certificate</p>
+              <h3 class="role">Frontend Developer Certificate</h3>
               <p class="blurb">Bilge Adam Academy</p>
             </div>
           </div>
