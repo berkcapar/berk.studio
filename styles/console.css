@@ -197,9 +197,6 @@ html { color-scheme: dark; }
 .rail-foot {
   border-top: 1px solid var(--line-soft);
   padding: 16px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
 }
 .links { display: flex; gap: 7px; }
 .links a {
@@ -213,13 +210,6 @@ html { color-scheme: dark; }
 }
 .links a:hover { color: var(--accent); border-color: var(--accent-line); background: var(--accent-wash); }
 .links svg { width: 15px; height: 15px; fill: currentColor; display: block; }
-
-.foot-note {
-  font-family: var(--mono);
-  font-size: var(--fs-micro);
-  line-height: 1.6;
-  color: var(--text-faint);
-}
 
 /* ---------- main ---------- */
 .main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
@@ -627,7 +617,6 @@ html { color-scheme: dark; }
   .transcript { padding: 26px 18px 16px; gap: 32px; }
   .composer { padding: 13px 18px 18px; }
   .topbar { padding: 0 16px; }
-  .ctx .sep, .ctx .tz { display: none; }
   .entry { grid-template-columns: minmax(0, 1fr); gap: 6px; }
   .entry .when { order: -1; padding-top: 0; }
   :root { --fs-display: 1.36rem; }

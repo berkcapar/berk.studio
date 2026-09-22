@@ -384,7 +384,6 @@ export default function Console({ thread: threadId, appended, posts }) {
                 {Icons.x}
               </a>
             </div>
-            <div className="foot-note">Berlin, DE</div>
           </div>
         </aside>
 
@@ -408,11 +407,7 @@ export default function Console({ thread: threadId, appended, posts }) {
             </button>
             <h2>{thread.title}</h2>
             <div className="ctx">
-              <span>Pactum AI</span>
-              <span className="sep" aria-hidden="true">
-                &middot;
-              </span>
-              <span className="tz">Berlin &middot; UTC+1</span>
+              <span>Product Leader from Berlin</span>
             </div>
           </header>
 
