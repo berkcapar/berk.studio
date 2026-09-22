@@ -31,34 +31,7 @@ export const THREADS = [
         <p>If you'd like to get in touch about a project, a collab, an opportunity or anything at all, email me at <a href="mailto:${EMAIL}">${EMAIL}</a>. Or send your message to the chat below and I'll reply real quick.</p>`,
       },
     ],
-    chips: [
-      {
-        q: "What does an AI negotiation agent actually do?",
-        a: `<p>A buyer at a Fortune 500 has thousands of tail-spend suppliers they'll never have time to call. Pactum's agents identify the commercial opportunity and then negotiate with all of them at once: in chat, in the supplier's language, inside a mandate the buyer sets.</p>
-            <h3>Where the product work lives</h3>
-            <ul>
-              <li><strong>Agent decisioning.</strong> Offer strategy, counteroffers, acceptance thresholds, supplier-specific constraints and savings models. That's the actual surface I define.</li>
-              <li><strong>Configurable, not bespoke.</strong> I translate customer-specific workflows into reusable platform capabilities across engagement, orchestration, configuration, analytics and reporting, so the next customer doesn't need a services project.</li>
-            </ul>
-            <p>The bet: make it self-serve. Every week of onboarding we remove is a week of value the customer gets back.</p>`,
-      },
-      {
-        q: "What are you building on the side?",
-        a: `<p>Mobile apps, mostly. Small ones, built end to end, shipped to the store.</p>
-            <p>Building them is the easy half. <strong>Distribution is the part I'm still figuring out</strong>, which is humbling, because I've spent a decade on the other side of that problem with a brand, a budget and a sales team behind me. Turns out none of that transfers when it's just you and an App Store listing.</p>
-            <p>It's the most useful thing I do outside work: it keeps me close to the craft, and it keeps me honest about how hard the go-to-market really is.</p>`,
-      },
-      {
-        q: "How do you work with engineering and design?",
-        a: `<p>Close, and with the problem framed rather than the solution specified. At Pactum I drive discovery, prototyping, roadmap decisions and delivery alongside an Engineering Lead, a Solution Lead, 6 engineers, 1 designer and 1 data engineer. At Yara I functionally led 3 PMs and squads of 15 developers, 2 designers and 3 data analysts.</p>
-            <ul>
-              <li>I bring the bet, the metric and the constraint. The team brings the shape.</li>
-              <li>Discovery and delivery run in parallel, not in sequence. There's always a next thing being de-risked.</li>
-              <li>Anything we ship has an instrumented question attached. If we can't say what would prove us wrong, it isn't ready.</li>
-              <li>I prototype myself. Rapid prototyping is faster than a spec at settling an argument.</li>
-            </ul>`,
-      },
-    ],
+    chips: [],
   },
 
   {
