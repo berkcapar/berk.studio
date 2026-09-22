@@ -395,16 +395,6 @@ export const THREADS = [
     ],
     chips: [
       {
-        q: "What are you looking for next?",
-        a: `<p>I'm building at Pactum and not going anywhere. But the shape of work I keep choosing is consistent, so for the record:</p>
-            <ul>
-              <li>A product where <strong>automation has to earn trust</strong>. The interesting constraint is human, not technical.</li>
-              <li>Enterprise buyers, because the adoption problem is honest and the feedback is specific.</li>
-              <li>A team small enough that I'm still close to the craft.</li>
-            </ul>
-            <p>If that sounds like what you're building, <a href="https://www.linkedin.com/in/berkcapar/" target="_blank" rel="noopener noreferrer">LinkedIn</a> is the fastest way to reach me.</p>`,
-      },
-      {
         q: "How do I get in touch?",
         a: `<div class="panel">
               <span class="eyebrow">Contact</span>
