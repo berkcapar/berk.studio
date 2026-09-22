@@ -439,22 +439,26 @@ export default function Console({ thread: threadId, appended, posts }) {
 
           <div className="composer">
             <div className="composer-inner">
-              <div className="chips">
-                {thread.chips.map((c) => {
-                  const spent = (used[activeId] || []).includes(c.q);
-                  return (
-                    <button
-                      key={c.q}
-                      type="button"
-                      className="chip"
-                      disabled={spent || busy}
-                      onClick={() => onChip(c)}
-                    >
-                      {c.q}
-                    </button>
-                  );
-                })}
-              </div>
+              {/* A thread with no suggested questions shows no row, rather
+                  than an empty one that still takes its gap. */}
+              {thread.chips.length > 0 && (
+                <div className="chips">
+                  {thread.chips.map((c) => {
+                    const spent = (used[activeId] || []).includes(c.q);
+                    return (
+                      <button
+                        key={c.q}
+                        type="button"
+                        className="chip"
+                        disabled={spent || busy}
+                        onClick={() => onChip(c)}
+                      >
+                        {c.q}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
               <form className="box" onSubmit={onSubmit}>
                 <label htmlFor="ask" className="sr-only">
                   Ask a question

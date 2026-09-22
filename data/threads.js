@@ -138,10 +138,12 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2025&ndash;<br>now</div>
             <div class="entry-body">
+              <span class="eyebrow">Platform ownership &middot; Building AI agents</span>
               <h3 class="role">Supplier Engagement Platform <span class="at">&middot; Pactum AI</span></h3>
-              <p class="blurb">Pactum's highest-ARR product. Lets enterprise procurement teams configure, launch and scale autonomous AI-agent negotiations.</p>
+              <p class="blurb"><strong>Pactum's highest-ARR product.</strong> Lets enterprise procurement teams configure, launch and scale autonomous AI-agent negotiations.</p>
+              <p class="mine">I own this product end to end: the strategy, the agent decisioning, and hands-on delivery with an Engineering Lead, a Solution Lead, 6 engineers, a designer and a data engineer.</p>
               <ul>
-                <li>Define agent negotiation strategy: counteroffers, acceptance thresholds, supplier constraints, human-in-the-loop and savings models. Used every day by teams at Walmart, Otto and Sandoz.</li>
+                <li>Define agent negotiation strategy: counteroffers, acceptance thresholds, supplier constraints, human-in-the-loop and savings models. Used every day by teams at <strong>Walmart, Otto and Sandoz</strong>.</li>
                 <li>Led the transformation of enterprise-specific customer workflows into reusable agentic capabilities, so onboarding a new customer stops being a services project.</li>
               </ul>
               <div class="tags"><span class="key">Current</span><span>Agentic AI</span><span>AI guardrails</span><span>Procurement</span></div>
@@ -151,10 +153,12 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2023&ndash;<br>2025</div>
             <div class="entry-body">
-              <h3 class="role">StuntAI <span class="at">&middot; founded &amp; exited</span></h3>
-              <p class="blurb">AI-powered marketing automation: strategy, content and campaign assets, generated faster.</p>
+              <span class="eyebrow">Founded and exited</span>
+              <h3 class="role">StuntAI <span class="at">&middot; AI marketing automation SaaS</span></h3>
+              <p class="blurb">Marketing automation: strategy, content and campaign assets, generated with AI.</p>
+              <p class="mine">I founded it and ran product myself: discovery, AI workflow design, technical scoping, pricing and the sale, with two developers, a designer and a data engineer.</p>
               <ul>
-                <li>Took an AI SaaS product 0-to-1 through discovery, prototyping, launch, customer validation and monetization, to a successful exit.</li>
+                <li>Created an AI SaaS product 0-to-1 through discovery, prototyping, launch, customer validation and monetization, to <strong>a successful exit</strong>, with a team of four.</li>
                 <li>Designed reusable agentic workflows from structured business context, prompt orchestration and automation logic.</li>
                 <li>Built onboarding, subscription pricing, acquisition funnels and B2B sales processes.</li>
               </ul>
@@ -165,8 +169,10 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2024</div>
             <div class="entry-body">
+              <span class="eyebrow">International expansion</span>
               <h3 class="role">Safe mixing guidance <span class="at">&middot; Yara, 2 &rarr; 12 countries</span></h3>
               <p class="blurb">Lets farmers verify whether leaf fertilisers can be safely mixed with hundreds of plant-protection products.</p>
+              <p class="mine">I owned the expansion: which markets, in what order, and the chemistry and regulatory re-verification each one needed before it could launch.</p>
               <ul>
                 <li>Led the expansion from 2 to 12 countries: <strong>700% more users, 250% more active users</strong>.</li>
                 <li>Each market meant re-verifying chemistry and regulation, not translating strings.</li>
@@ -179,8 +185,10 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2024</div>
             <div class="entry-body">
+              <span class="eyebrow">Built and scaled</span>
               <h3 class="role">Nutrition &amp; harvest optimisation <span class="at">&middot; YaraPlus</span></h3>
               <p class="blurb">Yara's all-in-one digital farming platform, bringing agronomic tools, services and expert knowledge into one place.</p>
+              <p class="mine">I set the strategy, the roadmap priorities and the success metrics, and coached the product owners who ran these day to day.</p>
               <ul>
                 <li>Built and scaled data-driven nutrition recommendation and harvest optimisation products, turning agronomic expertise into scalable digital workflows.</li>
                 <li><strong>30% YoY sales growth, 65% YoY engagement growth, +10 NPS.</strong></li>
@@ -193,8 +201,10 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2023</div>
             <div class="entry-body">
+              <span class="eyebrow">Machine learning / AI product launch &middot; A/B experimentation</span>
               <h3 class="role">Course recommendations <span class="at">&middot; Stack Overflow</span></h3>
-              <p class="blurb">An AI/ML-backed advertising product matching courses to what a developer was actually reading about.</p>
+              <p class="blurb">An advertising product built on Stack Overflow&rsquo;s own first-party data: an ML model read what a developer was reading and asking about on the platform, and served the course that matched it. No third-party tracking.</p>
+              <p class="mine">I led the product and its experimentation: what got recommended, where it appeared, and the A/B tests that doubled click-through in a month.</p>
               <ul>
                 <li><strong>150M+ impressions</strong>, and rapid experimentation doubled click-through within one month.</li>
               </ul>
@@ -206,8 +216,10 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2022</div>
             <div class="entry-body">
+              <span class="eyebrow">0-to-1 automation</span>
               <h3 class="role">CV-to-Profile <span class="at">&middot; Experteer</span></h3>
               <p class="blurb">Turning unstructured CV uploads into structured candidate profiles, instantly.</p>
+              <p class="mine">I defined the strategy and the success metrics, and set up the agile way of working across in-house engineering and an external design team.</p>
               <ul>
                 <li><strong>+25% profile creation, +50% CV upload rates.</strong></li>
                 <li>Cut manual profile completion effort, shortening the path from sign-up to searchable profile.</li>
@@ -220,8 +232,10 @@ export const THREADS = [
           <div class="entry">
             <div class="when">2021</div>
             <div class="entry-body">
+              <span class="eyebrow">Consumer scale</span>
               <h3 class="role">Samsung Galaxy Bizz <span class="at">&middot; 15M devices</span></h3>
               <p class="blurb">New-generation content app pre-installed across 15 million Samsung devices in Turkey.</p>
+              <p class="mine">I led product strategy and the release end to end, from discovery through delivery, and owned the engagement and revenue targets.</p>
               <ul>
                 <li><strong>+30% logged-in users, +15% first-day retention, +45% ad revenue.</strong></li>
               </ul>
@@ -232,20 +246,7 @@ export const THREADS = [
         </div>`,
       },
     ],
-    chips: [
-      {
-        q: "Which one are you proudest of?",
-        a: `<p>The safe mixing guidance app, and not because of the 700%.</p>
-            <p>Mixing leaf fertiliser with a plant-protection product can ruin a tank, a spray window, or a crop. Farmers were solving it with phone calls and folklore. We shipped something that answered the question in seconds, then took it from 2 countries to 12, which meant re-verifying chemistry, regulation and language market by market.</p>
-            <p>The growth was a consequence. <strong>What I'm proud of is that the answer stayed trustworthy in twelve regulatory regimes.</strong></p>`,
-      },
-      {
-        q: "What's a project that didn't work?",
-        a: `<p>StuntAI's first direction. We built a genuinely good product and acquired users who enjoyed it and would not pay for it. I'd confused engagement with willingness-to-pay, a mistake I had every framework available to avoid.</p>
-            <p>What saved it was how fast we admitted it: interviews, market research, then a hard pivot toward business buyers. The economics worked, and the company exited in 2025.</p>
-            <p><em>I'd rather be wrong in month six than right in month thirty.</em></p>`,
-      },
-    ],
+    chips: [],
   },
 
   {

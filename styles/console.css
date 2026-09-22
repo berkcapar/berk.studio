@@ -717,3 +717,13 @@ html { color-scheme: dark; }
   transition: color .15s ease, border-color .15s ease, background .15s ease;
 }
 .nf-links a:hover { color: var(--accent); border-color: var(--accent-line); background: var(--accent-wash); }
+
+/* What Berk was on the hook for, as distinct from what the product was. */
+.a .mine {
+  margin: 9px 0 0;
+  padding-left: 13px;
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-ui);
+  line-height: 1.6;
+  color: var(--text);
+}
