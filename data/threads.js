@@ -419,13 +419,13 @@ export const THREADS = [
       {
         q: "What's this?",
         a: `
-        <p class="lede">hey linear team.<img class="brand" src="/linear-logo-light.svg" alt="Linear" width="200" height="200"></p>
+        <p class="lede">hey Linear team.<img class="brand" src="/linear-logo-light.svg" alt="Linear" width="200" height="200"></p>
         <p>Cover letters tend to sound the same. And much of good product work is making complex ideas clear to busy people. So rather than write one, I recorded one.</p>
         <div class="video">
           <iframe src="https://www.tella.tv/video/vid_cmufggjbj005f0agm6opk96os/embed?b=1&amp;title=1&amp;a=1&amp;loop=0&amp;t=0&amp;muted=0&amp;wt=1&amp;o=1" title="Berk Çapar, video cover letter for Linear" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
         <p>The prototype I walk through in the video is live, so you can click around it yourself: <a href="https://negotiation-orchestrator-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">negotiation-orchestrator-prototype.vercel.app</a></p>
-        <p>If you'd like the long version, it's all here: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>. The box below emails me directly, and I usually reply within a day.</p>`,
+        <p>If you'd like the long version, it's all here: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>. Looking forward to chatting more.</p>`,
       },
     ],
     chips: [],
