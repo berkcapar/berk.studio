@@ -406,4 +406,27 @@ export const THREADS = [
       },
     ],
   },
+  {
+    id: "linear",
+    path: "/linear-cover-letter-video",
+    name: "For Linear",
+    note: "",
+    title: "For Linear",
+    // A cover letter for one application. Reachable by its link only: not in
+    // the rail, not in the sitemap, and marked noindex on its own page.
+    hidden: true,
+    turns: [
+      {
+        q: "What's this?",
+        a: `
+        <p class="lede">hey linear, thanks for stopping by.</p>
+        <p>Cover letters tend to say the same things, and so much of product work is explaining an idea clearly to people who are busy. So rather than write one, I recorded one.</p>
+        <div class="video">
+          <iframe src="https://www.tella.tv/video/vid_cmufggjbj005f0agm6opk96os/embed?b=1&amp;title=1&amp;a=1&amp;loop=0&amp;t=0&amp;muted=0&amp;wt=1&amp;o=1" title="Berk Çapar, video cover letter for Linear" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <p>If you'd like the long version, it's all here: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>. The box below emails me directly, and I usually reply within a day.</p>`,
+      },
+    ],
+    chips: [],
+  },
 ];

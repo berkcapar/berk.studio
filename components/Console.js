@@ -246,7 +246,10 @@ export default function Console({ thread: threadId, appended, posts }) {
   const [draft, setDraft] = useState("");
 
   const scrollRef = useRef(null);
-  const thread = VISIBLE.find((t) => t.id === activeId) || VISIBLE[0];
+  // Look the open thread up among all threads, not just the rail's: a hidden
+  // thread (a page reached by its link only) still renders when routed to,
+  // it just never appears in the rail.
+  const thread = THREADS.find((t) => t.id === activeId) || VISIBLE[0];
 
   const toBottom = useCallback(() => {
     const el = scrollRef.current;

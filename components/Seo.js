@@ -17,6 +17,7 @@ export default function Seo({
   type = "website",
   jsonLd,
   publishedTime,
+  noindex = false,
 }) {
   const url = `${SITE}${path === "/" ? "/" : path}`;
 
@@ -26,6 +27,9 @@ export default function Seo({
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={url} />
+      {/* For pages meant for one reader, sent by link. Blocking them in
+          robots.txt would stop crawlers from ever seeing this tag. */}
+      {noindex ? <meta name="robots" content="noindex" /> : null}
 
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
