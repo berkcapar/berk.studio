@@ -732,3 +732,13 @@ html { color-scheme: dark; }
   height: 100%;
   border: 0;
 }
+
+/* A company's mark beside a greeting addressed to it. Sized to the line and
+   given room, per Linear's brand guidance; the file itself is untouched. */
+.a .lede .brand {
+  display: inline-block;
+  width: 0.95em;
+  height: 0.95em;
+  margin-left: 0.5em;
+  vertical-align: -0.1em;
+}
