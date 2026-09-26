@@ -449,7 +449,7 @@ export const THREADS = [
       {
         q: "Why am I getting this?",
         a: `
-        <p class="lede">if you're getting this, it's because <mark class="marker">your company caught my attention</mark>.</p>
+        <p class="lede">if you're reading this, it's because <mark class="marker">your company caught my attention</mark>.</p>
         <p>We haven't met yet. I'm a product leader and builder with about ten years of experience, based in Berlin. Currently I build AI agents that negotiate with suppliers on behalf of large enterprises for <a href="https://pactum.com/" target="_blank" rel="noopener noreferrer">Pactum AI</a>. I'm looking for my next role, and I'd rather show you how I work than send you just a CV and a LinkedIn message.</p>
         <p>So I recorded a couple of minutes on how I approach product work.</p>
         <div class="video">
