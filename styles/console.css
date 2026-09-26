@@ -742,3 +742,35 @@ html { color-scheme: dark; }
   margin-left: 0.5em;
   vertical-align: -0.1em;
 }
+
+/* A highlighter stroke across part of a lede, drawn in on load. The band
+   sits on the lower half of the line like a quick marker pass, and clones
+   per line so a wrapped phrase gets its own stroke on each line. */
+.a .lede .marker {
+  color: inherit;
+  background-color: transparent;
+  background-image: linear-gradient(
+    100deg,
+    rgba(240, 139, 96, 0) 0%,
+    rgba(240, 139, 96, 0.55) 1.5%,
+    rgba(240, 139, 96, 0.4) 35%,
+    rgba(240, 139, 96, 0.52) 72%,
+    rgba(240, 139, 96, 0.34) 98.5%,
+    rgba(240, 139, 96, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 58%;
+  background-position: 0 92%;
+  padding: 0 0.14em;
+  margin: 0 -0.14em;
+  border-radius: 0.5em 0.2em 0.45em 0.25em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: marker-draw 0.9s cubic-bezier(0.6, 0.1, 0.3, 1) 0.4s both;
+}
+@keyframes marker-draw {
+  from { background-size: 0% 58%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .a .lede .marker { animation: none; }
+}
