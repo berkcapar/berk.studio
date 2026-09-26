@@ -11,7 +11,7 @@ export default function HowIWork() {
     <>
       <Seo
         title="How I work · Berk Çapar"
-        description="A couple of minutes on how Berk Çapar approaches product work. Senior product manager at Pactum AI in Berlin."
+        description="A couple of minutes on how Berk Çapar approaches product work. Senior product manager in Berlin."
         path="/how-i-work"
         noindex
       />

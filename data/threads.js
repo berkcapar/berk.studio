@@ -450,12 +450,12 @@ export const THREADS = [
         q: "Why am I getting this?",
         a: `
         <p class="lede">hey, thanks for clicking. we haven't met, so here's a better intro than a CV.</p>
-        <p>I'm a senior PM at <a href="https://pactum.com/" target="_blank" rel="noopener noreferrer">Pactum AI</a> in Berlin, where I build AI agents that negotiate with suppliers on behalf of large enterprises. I'm looking for my next role, and I'd rather show you how I work than send you a list of claims.</p>
+        <p>I'm a senior PM with about ten years of experience, based in Berlin. Currently I build AI agents that negotiate with suppliers on behalf of large enterprises. I'm looking for my next role, and I'd rather show you how I work than send you just a CV and a LinkedIn message.</p>
         <p>So I recorded a couple of minutes on how I approach product work.</p>
         <div class="video">
           <iframe src="${INTRO_VIDEO}" title="Berk Çapar, how I approach product work" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
-        <p>If it resonates and you think I'd fit a team at your company, a referral would mean a lot. I'll make it easy: I can send you the role and a two-line summary you can paste in. And if it's not a fit, no worries at all, thanks for watching.</p>
+        <p>If it resonates and you think I'd fit a team at your company, a referral would mean a lot. And if it's not a fit, no worries at all, thanks for watching.</p>
         <p>If you want more: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>.</p>`,
       },
     ],
