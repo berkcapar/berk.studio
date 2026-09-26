@@ -9,7 +9,7 @@
 
 export const EMAIL = "berkcapar@gmail.com";
 
-// Embed URL of the general video cover letter shown on /cover-letter.
+// Embed URL of the intro video shown on /cover-letter.
 // For a Tella video: https://www.tella.tv/video/<id>/embed?b=1&title=1&a=1&loop=0&t=0&muted=0&wt=1&o=1
 const COVER_LETTER_VIDEO =
   "https://www.tella.tv/video/vid_cmuiauodn000z0agmcu1k35is/embed?b=1&amp;title=1&amp;a=1&amp;loop=0&amp;t=0&amp;muted=0&amp;wt=1&amp;o=1";
@@ -438,23 +438,25 @@ export const THREADS = [
   {
     id: "cover-letter",
     path: "/cover-letter",
-    name: "Cover letter",
+    name: "Intro",
     note: "",
-    title: "Cover letter",
-    // The general video cover letter, sent along with referral requests.
-    // Reachable by its link only: not in the rail, not in the sitemap, and
-    // marked noindex on its own page.
+    title: "Intro",
+    // A short video intro sent with referral requests on LinkedIn, to people
+    // I haven't met. Reachable by its link only: not in the rail, not in the
+    // sitemap, and marked noindex on its own page.
     hidden: true,
     turns: [
       {
-        q: "What's this?",
+        q: "Why am I getting this?",
         a: `
-        <p class="lede">hey there, thanks for taking a look.</p>
-        <p>Cover letters tend to sound the same. And much of good product work is making complex ideas clear to busy people. So rather than write one, I recorded one.</p>
+        <p class="lede">hey, thanks for clicking. we haven't met, so here's a better intro than a CV.</p>
+        <p>I'm a senior PM at <a href="https://pactum.com/" target="_blank" rel="noopener noreferrer">Pactum AI</a> in Berlin, where I build AI agents that negotiate with suppliers on behalf of large enterprises. I'm looking for my next role, and I'd rather show you how I work than send you a list of claims.</p>
+        <p>So I recorded a couple of minutes on how I approach product work.</p>
         <div class="video">
-          <iframe src="${COVER_LETTER_VIDEO}" title="Berk Çapar, video cover letter" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <iframe src="${COVER_LETTER_VIDEO}" title="Berk Çapar, how I approach product work" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
-        <p>If you'd like the long version, it's all here: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>. If anything here makes you think of a team I'd be a good fit for, I'd love to hear from you at <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>`,
+        <p>If it resonates and you think I'd fit a team at your company, a referral would mean a lot. I'll make it easy: I can send you the role and a two-line summary you can paste in. And if it's not a fit, no worries at all, thanks for watching.</p>
+        <p>If you want more: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>.</p>`,
       },
     ],
     chips: [],

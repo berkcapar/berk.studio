@@ -10,8 +10,8 @@ export default function CoverLetter() {
   return (
     <>
       <Seo
-        title="Cover letter · Berk Çapar"
-        description="A video cover letter from Berk Çapar, senior product manager at Pactum AI in Berlin."
+        title="Intro · Berk Çapar"
+        description="A short video intro from Berk Çapar, senior product manager at Pactum AI in Berlin."
         path="/cover-letter"
         noindex
       />
