@@ -1,5 +1,6 @@
 import Console from "../components/Console";
 import Seo from "../components/Seo";
+import Fireworks from "../components/Fireworks";
 
 /**
  * A short video on how I work, sent by link with referral requests. It
@@ -16,6 +17,7 @@ export default function HowIWork() {
         noindex
       />
       <Console thread="how-i-work" />
+      <Fireworks id="how-i-work" />
     </>
   );
 }

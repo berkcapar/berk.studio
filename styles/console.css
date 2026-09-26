@@ -743,34 +743,36 @@ html { color-scheme: dark; }
   vertical-align: -0.1em;
 }
 
-/* A highlighter stroke across part of a lede, drawn in on load. The band
-   sits on the lower half of the line like a quick marker pass, and clones
-   per line so a wrapped phrase gets its own stroke on each line. */
+/* A highlighter stroke across part of a lede, drawn in on load. The stroke
+   is a hand-drawn shape that climbs slightly from left to right, with ragged
+   ends and a darker second pass, like a quick marker swipe. It clones per
+   line so a wrapped phrase gets its own stroke on each line. */
 .a .lede .marker {
   color: inherit;
   background-color: transparent;
-  background-image: linear-gradient(
-    100deg,
-    rgba(240, 139, 96, 0) 0%,
-    rgba(240, 139, 96, 0.55) 1.5%,
-    rgba(240, 139, 96, 0.4) 35%,
-    rgba(240, 139, 96, 0.52) 72%,
-    rgba(240, 139, 96, 0.34) 98.5%,
-    rgba(240, 139, 96, 0) 100%
-  );
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24' preserveAspectRatio='none'><path fill='%23F08B60' fill-opacity='.58' d='M3.5 6.2C40 5 92 3.9 136 2.8S184 1.4 197 1L199.4 4.2C198.6 9 199.8 13.6 197.8 18.6C150 19.2 98 20.6 54 21.8S14 23 1.8 23.4L.4 18.6C1.6 14.6.6 10.4 3.5 6.2Z'/><path fill='%23F08B60' fill-opacity='.2' d='M8 10.6C62 9.2 132 7.4 193 6L193.8 11.4C132 12.8 62 14.6 7.4 16Z'/></svg>");
   background-repeat: no-repeat;
-  background-size: 100% 58%;
-  background-position: 0 92%;
-  padding: 0 0.14em;
-  margin: 0 -0.14em;
-  border-radius: 0.5em 0.2em 0.45em 0.25em;
+  background-size: 100% 60%;
+  background-position: 0 88%;
+  padding: 0 0.08em;
+  margin: 0 -0.08em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  animation: marker-draw 0.9s cubic-bezier(0.6, 0.1, 0.3, 1) 0.4s both;
+  animation: marker-draw 0.8s cubic-bezier(0.6, 0.1, 0.3, 1) 0.5s both;
 }
 @keyframes marker-draw {
-  from { background-size: 0% 58%; }
+  from { background-size: 0% 60%; }
 }
 @media (prefers-reduced-motion: reduce) {
   .a .lede .marker { animation: none; }
+}
+
+/* Full-viewport layer for the first-view fireworks; never takes clicks. */
+.fireworks {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 60;
 }
