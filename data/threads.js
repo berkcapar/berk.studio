@@ -9,6 +9,10 @@
 
 export const EMAIL = "berkcapar@gmail.com";
 
+// Embed URL of the general video cover letter shown on /cover-letter.
+// For a Tella video: https://www.tella.tv/video/<id>/embed?b=1&title=1&a=1&loop=0&t=0&muted=0&wt=1&o=1
+const COVER_LETTER_VIDEO = "TODO_TELLA_EMBED_URL";
+
 export const THREADS = [
   {
     id: "welcome",
@@ -426,6 +430,30 @@ export const THREADS = [
         </div>
         <p>The prototype I walk through in the video is live, so you can click around it yourself: <a href="https://negotiation-orchestrator-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">negotiation-orchestrator-prototype.vercel.app</a></p>
         <p>If you'd like the long version, it's all here: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>. Looking forward to chatting more.</p>`,
+      },
+    ],
+    chips: [],
+  },
+  {
+    id: "cover-letter",
+    path: "/cover-letter",
+    name: "Cover letter",
+    note: "",
+    title: "Cover letter",
+    // The general video cover letter, sent along with referral requests.
+    // Reachable by its link only: not in the rail, not in the sitemap, and
+    // marked noindex on its own page.
+    hidden: true,
+    turns: [
+      {
+        q: "What's this?",
+        a: `
+        <p class="lede">hey there, thanks for taking a look.</p>
+        <p>Cover letters tend to sound the same. And much of good product work is making complex ideas clear to busy people. So rather than write one, I recorded one.</p>
+        <div class="video">
+          <iframe src="${COVER_LETTER_VIDEO}" title="Berk Çapar, video cover letter" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <p>If you'd like the long version, it's all here: what I've <a href="/shipped">shipped</a>, my <a href="/cv">CV</a>, and <a href="/blog">some writing</a>. If anything here makes you think of a team I'd be a good fit for, I'd love to hear from you at <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>`,
       },
     ],
     chips: [],
