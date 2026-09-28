@@ -12,7 +12,7 @@ export const EMAIL = "berkcapar@gmail.com";
 // Embed URL of the intro video shown on /how-i-work.
 // For a Tella video: https://www.tella.tv/video/<id>/embed?b=1&title=1&a=1&loop=0&t=0&muted=0&wt=1&o=1
 const INTRO_VIDEO =
-  "https://www.tella.tv/video/vid_cmuiauodn000z0agmcu1k35is/embed?b=1&amp;title=1&amp;a=1&amp;loop=0&amp;t=0&amp;muted=0&amp;wt=1&amp;o=1";
+  "https://www.tella.tv/video/vid_cmula4kge01ck0agmas1b62kb/embed?b=1&amp;title=1&amp;a=1&amp;loop=0&amp;t=0&amp;muted=0&amp;wt=1&amp;o=1";
 
 export const THREADS = [
   {
