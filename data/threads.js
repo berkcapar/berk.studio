@@ -33,6 +33,10 @@ export const THREADS = [
         <p>Recently I've spent a lot of time building and babysitting AI agents. Having a lot of fun.</p>
         <p>I've also been building mobile apps on the side, and trying to figure out distribution.</p>
         <p>Besides work, you can find me talking about economics, music, football and sometimes politics.</p>
+        <p>If you'd rather watch than read, here's a couple of minutes on how I approach product work.</p>
+        <div class="video">
+          <iframe src="${INTRO_VIDEO}" title="Berk Çapar, how I approach product work" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
         <p>If you'd like to get in touch about a project, a collab, an opportunity or anything at all, email me at <a href="mailto:${EMAIL}">${EMAIL}</a>. Or send your message to the chat below and I'll reply real quick.</p>`,
       },
     ],
