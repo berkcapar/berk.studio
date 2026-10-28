@@ -42,6 +42,9 @@
 
 - [Start here](https://berk.studio/): introduction in his own words
 - [Shipped](https://berk.studio/shipped): the products he has launched
+- [Skills](https://berk.studio/skills): open-source Claude skills for product
+  managers (unslop, opportunity solution trees, interview synthesis,
+  stakeholder updates)
 - [CV](https://berk.studio/cv): full career history and education
 - [Blog](https://berk.studio/blog): writing on product management
 

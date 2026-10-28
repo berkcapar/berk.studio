@@ -232,6 +232,96 @@ export const THREADS = [
   },
 
   {
+    id: "skills",
+    path: "/skills",
+    name: "Skills",
+    note: "04",
+    title: "Skills",
+    seoTitle: "Product Management Skills for Claude · Berk Çapar",
+    seoDescription:
+      "Open-source Claude skills for product managers: unslop for AI-written PRDs, opportunity solution trees, interview synthesis and stakeholder updates.",
+    turns: [
+      {
+        q: "Do you have tools I can use?",
+        a: `
+        <p class="lede">A few Claude skills I built for my own PM work. Each one runs a single workflow end to end. Free and open source.</p>
+        <div class="entries">
+          <div class="entry">
+            <div class="when">Writing</div>
+            <div class="entry-body">
+              <span class="eyebrow">&ldquo;Unslop this PRD.&rdquo;</span>
+              <h3 class="role">unslop <span class="at">&middot; for AI-written PRDs</span></h3>
+              <p class="blurb">Cuts a long, AI-generated PRD down to the decisions, numbers and open questions.</p>
+              <ul>
+                <li>Strips filler and AI rhetoric like &ldquo;It&rsquo;s not X, it&rsquo;s Y&rdquo;.</li>
+                <li>Never fills a gap with a made-up metric or date. Every missing decision becomes an open question.</li>
+                <li>A sample iPad calculator PRD went from <strong>1,033 to 658 words</strong> with every requirement kept.</li>
+              </ul>
+              <div class="tags"><span class="key">New</span><span>PRDs</span><span>Writing</span></div>
+              <a class="out" href="https://github.com/berkcapar/product-management-skills/tree/main/skills/unslop" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+              <a class="out" style="margin-left:16px" href="https://github.com/berkcapar/product-management-skills/blob/main/examples/unslop.md" target="_blank" rel="noopener noreferrer">Before and after &#8599;</a>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="when">Discovery</div>
+            <div class="entry-body">
+              <span class="eyebrow">&ldquo;Build our OST for activation.&rdquo;</span>
+              <h3 class="role">opportunity-solution-tree</h3>
+              <p class="blurb">Builds an Opportunity Solution Tree from interview transcripts, raw notes, data or just a goal.</p>
+              <ul>
+                <li>Attaches a KPI to the outcome and leading indicators to opportunities, then compares opportunities to pick a target.</li>
+                <li>Breaks solutions into assumptions and designs tests for them. RICE or ICE for solutions.</li>
+              </ul>
+              <div class="tags"><span>Discovery</span><span>OST</span><span>Assumption testing</span></div>
+              <a class="out" href="https://github.com/berkcapar/product-management-skills/tree/main/skills/opportunity-solution-tree" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+              <a class="out" style="margin-left:16px" href="https://github.com/berkcapar/product-management-skills/blob/main/examples/opportunity-solution-tree.md" target="_blank" rel="noopener noreferrer">Example &#8599;</a>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="when">Research</div>
+            <div class="entry-body">
+              <span class="eyebrow">&ldquo;Synthesize these 8 interviews.&rdquo;</span>
+              <h3 class="role">user-interview-synthesis</h3>
+              <p class="blurb">Turns interview transcripts into snapshots and a cross-interview synthesis.</p>
+              <ul>
+                <li>Themes counted by evidence, verbatim quotes, jobs to be done.</li>
+                <li>Opportunities written in the customer&rsquo;s words, ready to drop into the OST.</li>
+              </ul>
+              <div class="tags"><span>User research</span><span>JTBD</span></div>
+              <a class="out" href="https://github.com/berkcapar/product-management-skills/tree/main/skills/user-interview-synthesis" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="when">Comms</div>
+            <div class="entry-body">
+              <span class="eyebrow">&ldquo;Write my Friday update for the CEO.&rdquo;</span>
+              <h3 class="role">stakeholder-update</h3>
+              <p class="blurb">Turns messy notes into a bottom-line-up-front update for the CEO, board, team, sales or customers.</p>
+              <ul>
+                <li>Outcomes over activity, honest status, one clear ask.</li>
+              </ul>
+              <div class="tags"><span>Communication</span><span>Leadership</span></div>
+              <a class="out" href="https://github.com/berkcapar/product-management-skills/tree/main/skills/stakeholder-update" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+            </div>
+          </div>
+        </div>
+        <p>They chain: interviews &rarr; opportunities &rarr; OST &rarr; tests &rarr; stakeholder update. All of them live in <a href="https://github.com/berkcapar/product-management-skills" target="_blank" rel="noopener noreferrer">one repo</a>.</p>`,
+      },
+    ],
+    chips: [
+      {
+        q: "How do I install them?",
+        a: `<p><strong>Claude.ai</strong> (web, desktop, mobile): download a skill folder as a zip, upload it under Settings &rarr; Skills, then describe the task in a chat. The skill kicks in on its own.</p>
+            <p><strong>Claude Code</strong>: clone the repo and copy the skills into <code>~/.claude/skills/</code>, or into a project&rsquo;s <code>.claude/skills/</code> to scope them to that project.</p>
+            <p>Full steps are in the <a href="https://github.com/berkcapar/product-management-skills#install" target="_blank" rel="noopener noreferrer">README</a>.</p>`,
+      },
+    ],
+  },
+
+  {
     id: "blog",
     path: "/blog",
     name: "Blog",
